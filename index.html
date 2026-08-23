@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0046)file:///C:/Users/gerar/Downloads/dexora_2.html -->
+<!-- saved from url=(0046)file:///C:/Users/gerar/Downloads/dexora_4.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -147,6 +147,17 @@ section{position:relative}
   animation:wmshift 9s ease-in-out infinite}
 @keyframes wmshift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
 @media(max-width:700px){.brand .wm{display:none}}
+.netpill{display:inline-flex;align-items:center;gap:7px;font-size:11.5px;letter-spacing:.1em;
+  text-transform:uppercase;padding:6px 13px;border-radius:999px;white-space:nowrap;
+  border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04)}
+.netpill.warn{border-color:rgba(232,184,75,.5);color:var(--warn);background:rgba(232,184,75,.1)}
+.netpill.bad{border-color:rgba(255,92,77,.55);color:var(--dn);background:rgba(255,92,77,.1)}
+.netpill i{width:7px;height:7px;border-radius:50%;background:currentColor;
+  box-shadow:0 0 8px currentColor;animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.netbar{margin:0 0 18px;padding:13px 16px;border-radius:14px;font-size:13.5px;font-weight:400;line-height:1.55;
+  border:1px solid rgba(255,92,77,.4);background:rgba(255,92,77,.09);color:#FFD9D4}
+.netbar b{color:#fff}
 .spacer{flex:1}.tabs{display:flex;gap:6px;flex-wrap:wrap;padding:4px;border-radius:15px;
   background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);
   box-shadow:inset 0 2px 6px rgba(0,0,0,.6)}
@@ -538,6 +549,7 @@ footer p{max-width:84ch;margin:0 0 12px;line-height:1.5}footer strong{color:var(
     <button data-tab="wishlist">Wish List</button>
   </div>
   <span class="spacer"></span>
+  <span id="netPill" class="netpill hide"><i></i>Connected</span>
   <button id="searchBtn">Search ⌘K</button>
   <button id="userBtn">Gerry</button>
 </div>
@@ -547,21 +559,21 @@ footer p{max-width:84ch;margin:0 0 12px;line-height:1.5}footer strong{color:var(
   <div class="block">
     <h1 class="big"><span class="nm" id="welcome">Welcome back, Gerry!</span></h1>
     <div class="trio" id="trio">
-      <div class="spark-field" id="sparks" aria-hidden="true"><span class="spk" style="left:32.50%;bottom:-6px;width:2.9px;height:2.9px;
-      animation-duration:13.4s;animation-delay:-9.2s"></span><span class="spk" style="left:26.50%;bottom:-6px;width:1.7px;height:1.7px;
-      animation-duration:19.6s;animation-delay:-3.1s"></span><span class="spk" style="left:32.31%;bottom:-6px;width:1.7px;height:1.7px;
-      animation-duration:13.6s;animation-delay:-10.6s"></span><span class="spk" style="left:16.70%;bottom:-6px;width:2.6px;height:2.6px;
-      animation-duration:11.9s;animation-delay:-5.5s"></span><span class="spk" style="left:29.76%;bottom:-6px;width:2.8px;height:2.8px;
-      animation-duration:22.8s;animation-delay:-6.9s"></span><span class="spk" style="left:43.26%;bottom:-6px;width:2.5px;height:2.5px;
-      animation-duration:19.6s;animation-delay:-12.5s"></span><span class="spk" style="left:4.27%;bottom:-6px;width:1.9px;height:1.9px;
-      animation-duration:13.1s;animation-delay:-5.2s"></span><span class="spk" style="left:11.91%;bottom:-6px;width:1.2px;height:1.2px;
-      animation-duration:14.9s;animation-delay:-4.7s"></span><span class="spk" style="left:70.42%;bottom:-6px;width:2.5px;height:2.5px;
-      animation-duration:16.2s;animation-delay:-5.5s"></span><span class="spk" style="left:59.91%;bottom:-6px;width:1.9px;height:1.9px;
-      animation-duration:19.7s;animation-delay:-10.1s"></span><span class="spk" style="left:77.81%;bottom:-6px;width:2.1px;height:2.1px;
-      animation-duration:20.7s;animation-delay:-18.7s"></span><span class="spk" style="left:61.43%;bottom:-6px;width:1.7px;height:1.7px;
-      animation-duration:20.0s;animation-delay:-16.4s"></span><span class="spk" style="left:29.88%;bottom:-6px;width:2.5px;height:2.5px;
-      animation-duration:12.1s;animation-delay:-6.1s"></span><span class="spk" style="left:67.08%;bottom:-6px;width:2.9px;height:2.9px;
-      animation-duration:21.6s;animation-delay:-9.0s"></span></div>
+      <div class="spark-field" id="sparks" aria-hidden="true"><span class="spk" style="left:37.16%;bottom:-6px;width:2.6px;height:2.6px;
+      animation-duration:17.5s;animation-delay:-9.2s"></span><span class="spk" style="left:23.79%;bottom:-6px;width:2.3px;height:2.3px;
+      animation-duration:19.4s;animation-delay:-10.1s"></span><span class="spk" style="left:77.51%;bottom:-6px;width:1.6px;height:1.6px;
+      animation-duration:13.4s;animation-delay:-7.6s"></span><span class="spk" style="left:85.12%;bottom:-6px;width:2.2px;height:2.2px;
+      animation-duration:16.0s;animation-delay:-9.2s"></span><span class="spk" style="left:48.09%;bottom:-6px;width:1.9px;height:1.9px;
+      animation-duration:19.6s;animation-delay:-14.0s"></span><span class="spk" style="left:99.47%;bottom:-6px;width:1.6px;height:1.6px;
+      animation-duration:16.3s;animation-delay:-1.6s"></span><span class="spk" style="left:56.47%;bottom:-6px;width:1.8px;height:1.8px;
+      animation-duration:12.9s;animation-delay:-10.9s"></span><span class="spk" style="left:66.60%;bottom:-6px;width:2.6px;height:2.6px;
+      animation-duration:16.1s;animation-delay:-8.0s"></span><span class="spk" style="left:53.87%;bottom:-6px;width:1.0px;height:1.0px;
+      animation-duration:11.9s;animation-delay:-7.9s"></span><span class="spk" style="left:81.85%;bottom:-6px;width:1.2px;height:1.2px;
+      animation-duration:12.6s;animation-delay:-4.1s"></span><span class="spk" style="left:60.82%;bottom:-6px;width:1.6px;height:1.6px;
+      animation-duration:12.3s;animation-delay:-3.4s"></span><span class="spk" style="left:32.93%;bottom:-6px;width:1.0px;height:1.0px;
+      animation-duration:20.1s;animation-delay:-16.6s"></span><span class="spk" style="left:5.95%;bottom:-6px;width:1.0px;height:1.0px;
+      animation-duration:19.0s;animation-delay:-5.5s"></span><span class="spk" style="left:1.03%;bottom:-6px;width:2.5px;height:2.5px;
+      animation-duration:18.6s;animation-delay:-13.2s"></span></div>
       <div class="trio-in">
         <div class="tcard l" data-hero="base1-15">
           <img src="./Dexora — Scan · Collect · Master_files/15_hires.png" alt="Venusaur, Base Set 1999" loading="eager">
@@ -585,10 +597,345 @@ footer p{max-width:84ch;margin:0 0 12px;line-height:1.5}footer strong{color:var(
     </div>
   </div>
   <div class="block">
-    <h2 class="sec">Trending now <small id="trendSub">Phantasmal Flames and five more</small></h2>
-    <p class="sub">The chase cards from the six newest sets, ranked by current market price.</p>
-    <div id="trending"><div class="msg"><b>The price feed didn't answer</b>
-      <br><button id="retryTrend">Try again</button></div></div>
+    <h2 class="sec">Trending now <small id="trendSub">Pitch Black and more</small></h2>
+    <p class="sub">The chase cards from the four newest sets, ranked by current market price.</p>
+    <div id="trending"><div class="grid"><article class="tile" style="animation-delay:0ms">
+    <span class="rank">#1</span>
+    <div class="lbl"><div class="cn">Mega Darkrai ex</div><div class="sn">Pitch Black · 116/84</div></div>
+    <span class="vtag foil">Holo</span>
+    <span class="sig nw">Just landed</span>
+    <div class="imgwrap" data-lb="c1"><img src="./Dexora — Scan · Collect · Master_files/low.webp" alt="Mega Darkrai ex" loading="lazy"></div>
+    <dl class="meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Illustrator</dt><dd title="AKIRA EGAWA">AKIRA EGAWA</dd></div>
+      <div><dt>Market</dt><dd class="val">$220.34</dd></div>
+      <div><dt>PSA 10</dt><dd class="na"><a class="psa" href="https://www.pricecharting.com/search-products?type=prices&amp;q=Mega%20Darkrai%20ex%20Pitch%20Black" target="_blank" rel="noopener">Graded pricing unavailable ↗</a></dd></div>
+    </dl><div class="rowbtn">
+      <button data-q="own" data-c="c1">+ Own</button>
+      <button data-q="wish" data-c="c1">+ Wish</button>
+      <button class="dots" data-q="more" data-c="c1" title="Add with details">⋯</button></div></article><article class="tile" style="animation-delay:30ms">
+    <span class="rank">#2</span>
+    <div class="lbl"><div class="cn">Mega Greninja ex</div><div class="sn">Chaos Rising · 116/86</div></div>
+    <span class="vtag foil">Holo</span>
+    <span class="sig nw">Just landed</span>
+    <div class="imgwrap" data-lb="c2"><img src="./Dexora — Scan · Collect · Master_files/low(1).webp" alt="Mega Greninja ex" loading="lazy"></div>
+    <dl class="meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Illustrator</dt><dd title="Susumu Maeya">Susumu Maeya</dd></div>
+      <div><dt>Market</dt><dd class="val">$194.75</dd></div>
+      <div><dt>PSA 10</dt><dd class="na"><a class="psa" href="https://www.pricecharting.com/search-products?type=prices&amp;q=Mega%20Greninja%20ex%20Chaos%20Rising" target="_blank" rel="noopener">Graded pricing unavailable ↗</a></dd></div>
+    </dl><div class="rowbtn">
+      <button data-q="own" data-c="c2">+ Own</button>
+      <button data-q="wish" data-c="c2">+ Wish</button>
+      <button class="dots" data-q="more" data-c="c2" title="Add with details">⋯</button></div></article><article class="tile" style="animation-delay:60ms">
+    <span class="rank">#3</span>
+    <div class="lbl"><div class="cn">Mega Greninja ex</div><div class="sn">Chaos Rising · 122/86</div></div>
+    <span class="vtag foil">Holo</span>
+    <span class="sig nw">Just landed</span>
+    <div class="imgwrap" data-lb="c3"><img src="./Dexora — Scan · Collect · Master_files/low(2).webp" alt="Mega Greninja ex" loading="lazy"></div>
+    <dl class="meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Illustrator</dt><dd title="takuyoa">takuyoa</dd></div>
+      <div><dt>Market</dt><dd class="val">$173.50</dd></div>
+      <div><dt>PSA 10</dt><dd class="na"><a class="psa" href="https://www.pricecharting.com/search-products?type=prices&amp;q=Mega%20Greninja%20ex%20Chaos%20Rising" target="_blank" rel="noopener">Graded pricing unavailable ↗</a></dd></div>
+    </dl><div class="rowbtn">
+      <button data-q="own" data-c="c3">+ Own</button>
+      <button data-q="wish" data-c="c3">+ Wish</button>
+      <button class="dots" data-q="more" data-c="c3" title="Add with details">⋯</button></div></article><article class="tile" style="animation-delay:90ms">
+    
+    <div class="lbl"><div class="cn">Mega Darkrai ex</div><div class="sn">Pitch Black · 120/84</div></div>
+    <span class="vtag foil">Holo</span>
+    <span class="sig nw">Just landed</span>
+    <div class="imgwrap" data-lb="c4"><img src="./Dexora — Scan · Collect · Master_files/low(3).webp" alt="Mega Darkrai ex" loading="lazy"></div>
+    <dl class="meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Illustrator</dt><dd title="5ban Graphics">5ban Graphics</dd></div>
+      <div><dt>Market</dt><dd class="val">$171.04</dd></div>
+      <div><dt>PSA 10</dt><dd class="na"><a class="psa" href="https://www.pricecharting.com/search-products?type=prices&amp;q=Mega%20Darkrai%20ex%20Pitch%20Black" target="_blank" rel="noopener">Graded pricing unavailable ↗</a></dd></div>
+    </dl><div class="rowbtn">
+      <button data-q="own" data-c="c4">+ Own</button>
+      <button data-q="wish" data-c="c4">+ Wish</button>
+      <button class="dots" data-q="more" data-c="c4" title="Add with details">⋯</button></div></article><article class="tile" style="animation-delay:120ms">
+    
+    <div class="lbl"><div class="cn">Mega Zygarde ex</div><div class="sn">Perfect Order · 124/88</div></div>
+    <span class="vtag foil">Holo</span>
+    <span class="sig st">Steady</span>
+    <div class="imgwrap" data-lb="c5"><img src="./Dexora — Scan · Collect · Master_files/low(4).webp" alt="Mega Zygarde ex" loading="lazy"></div>
+    <dl class="meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Illustrator</dt><dd title="takuyoa">takuyoa</dd></div>
+      <div><dt>Market</dt><dd class="val">$135.66</dd></div>
+      <div><dt>PSA 10</dt><dd class="na"><a class="psa" href="https://www.pricecharting.com/search-products?type=prices&amp;q=Mega%20Zygarde%20ex%20Perfect%20Order" target="_blank" rel="noopener">Graded pricing unavailable ↗</a></dd></div>
+    </dl><div class="rowbtn">
+      <button data-q="own" data-c="c5">+ Own</button>
+      <button data-q="wish" data-c="c5">+ Wish</button>
+      <button class="dots" data-q="more" data-c="c5" title="Add with details">⋯</button></div></article><article class="tile" style="animation-delay:150ms">
+    
+    <div class="lbl"><div class="cn">Meowth ex</div><div class="sn">Perfect Order · 121/88</div></div>
+    <span class="vtag foil">Holo</span>
+    <span class="sig st">Steady</span>
+    <div class="imgwrap" data-lb="c6"><img src="./Dexora — Scan · Collect · Master_files/low(5).webp" alt="Meowth ex" loading="lazy"></div>
+    <dl class="meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Illustrator</dt><dd title="Natsumi Yoshida">Natsumi Yoshida</dd></div>
+      <div><dt>Market</dt><dd class="val">$128.97</dd></div>
+      <div><dt>PSA 10</dt><dd class="na"><a class="psa" href="https://www.pricecharting.com/search-products?type=prices&amp;q=Meowth%20ex%20Perfect%20Order" target="_blank" rel="noopener">Graded pricing unavailable ↗</a></dd></div>
+    </dl><div class="rowbtn">
+      <button data-q="own" data-c="c6">+ Own</button>
+      <button data-q="wish" data-c="c6">+ Wish</button>
+      <button class="dots" data-q="more" data-c="c6" title="Add with details">⋯</button></div></article><article class="tile" style="animation-delay:180ms">
+    
+    <div class="lbl"><div class="cn">Morpeko ex</div><div class="sn">Pitch Black · 117/84</div></div>
+    <span class="vtag foil">Holo</span>
+    <span class="sig nw">Just landed</span>
+    <div class="imgwrap" data-lb="c7"><img src="./Dexora — Scan · Collect · Master_files/low(6).webp" alt="Morpeko ex" loading="lazy"></div>
+    <dl class="meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Illustrator</dt><dd title="NC Empire">NC Empire</dd></div>
+      <div><dt>Market</dt><dd class="val">$93.94</dd></div>
+      <div><dt>PSA 10</dt><dd class="na"><a class="psa" href="https://www.pricecharting.com/search-products?type=prices&amp;q=Morpeko%20ex%20Pitch%20Black" target="_blank" rel="noopener">Graded pricing unavailable ↗</a></dd></div>
+    </dl><div class="rowbtn">
+      <button data-q="own" data-c="c7">+ Own</button>
+      <button data-q="wish" data-c="c7">+ Wish</button>
+      <button class="dots" data-q="more" data-c="c7" title="Add with details">⋯</button></div></article><article class="tile" style="animation-delay:210ms">
+    
+    <div class="lbl"><div class="cn">Mega Zeraora ex</div><div class="sn">Pitch Black · 114/84</div></div>
+    <span class="vtag foil">Holo</span>
+    <span class="sig nw">Just landed</span>
+    <div class="imgwrap" data-lb="c8"><img src="./Dexora — Scan · Collect · Master_files/low(7).webp" alt="Mega Zeraora ex" loading="lazy"></div>
+    <dl class="meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Illustrator</dt><dd title="GIDORA">GIDORA</dd></div>
+      <div><dt>Market</dt><dd class="val">$62.17</dd></div>
+      <div><dt>PSA 10</dt><dd class="na"><a class="psa" href="https://www.pricecharting.com/search-products?type=prices&amp;q=Mega%20Zeraora%20ex%20Pitch%20Black" target="_blank" rel="noopener">Graded pricing unavailable ↗</a></dd></div>
+    </dl><div class="rowbtn">
+      <button data-q="own" data-c="c8">+ Own</button>
+      <button data-q="wish" data-c="c8">+ Wish</button>
+      <button class="dots" data-q="more" data-c="c8" title="Add with details">⋯</button></div></article><article class="tile" style="animation-delay:240ms">
+    
+    <div class="lbl"><div class="cn">Cinccino ex</div><div class="sn">Chaos Rising · 119/86</div></div>
+    <span class="vtag foil">Holo</span>
+    <span class="sig nw">Just landed</span>
+    <div class="imgwrap" data-lb="c9"><img src="./Dexora — Scan · Collect · Master_files/low(8).webp" alt="Cinccino ex" loading="lazy"></div>
+    <dl class="meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Illustrator</dt><dd title="Keisin">Keisin</dd></div>
+      <div><dt>Market</dt><dd class="val">$61.88</dd></div>
+      <div><dt>PSA 10</dt><dd class="na"><a class="psa" href="https://www.pricecharting.com/search-products?type=prices&amp;q=Cinccino%20ex%20Chaos%20Rising" target="_blank" rel="noopener">Graded pricing unavailable ↗</a></dd></div>
+    </dl><div class="rowbtn">
+      <button data-q="own" data-c="c9">+ Own</button>
+      <button data-q="wish" data-c="c9">+ Wish</button>
+      <button class="dots" data-q="more" data-c="c9" title="Add with details">⋯</button></div></article><article class="tile" style="animation-delay:270ms">
+    
+    <div class="lbl"><div class="cn">Mega Zygarde ex</div><div class="sn">Perfect Order · 120/88</div></div>
+    <span class="vtag foil">Holo</span>
+    <span class="sig st">Steady</span>
+    <div class="imgwrap" data-lb="c10"><img src="./Dexora — Scan · Collect · Master_files/low(9).webp" alt="Mega Zygarde ex" loading="lazy"></div>
+    <dl class="meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Illustrator</dt><dd title="kantaro">kantaro</dd></div>
+      <div><dt>Market</dt><dd class="val">$58.69</dd></div>
+      <div><dt>PSA 10</dt><dd class="na"><a class="psa" href="https://www.pricecharting.com/search-products?type=prices&amp;q=Mega%20Zygarde%20ex%20Perfect%20Order" target="_blank" rel="noopener">Graded pricing unavailable ↗</a></dd></div>
+    </dl><div class="rowbtn">
+      <button data-q="own" data-c="c10">+ Own</button>
+      <button data-q="wish" data-c="c10">+ Wish</button>
+      <button class="dots" data-q="more" data-c="c10" title="Add with details">⋯</button></div></article><article class="tile" style="animation-delay:300ms">
+    
+    <div class="lbl"><div class="cn">Mega Clefable ex</div><div class="sn">Perfect Order · 119/88</div></div>
+    <span class="vtag foil">Holo</span>
+    <span class="sig st">Steady</span>
+    <div class="imgwrap" data-lb="c11"><img src="./Dexora — Scan · Collect · Master_files/low(10).webp" alt="Mega Clefable ex" loading="lazy"></div>
+    <dl class="meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Illustrator</dt><dd title="Cona Nitanda">Cona Nitanda</dd></div>
+      <div><dt>Market</dt><dd class="val">$53.06</dd></div>
+      <div><dt>PSA 10</dt><dd class="na"><a class="psa" href="https://www.pricecharting.com/search-products?type=prices&amp;q=Mega%20Clefable%20ex%20Perfect%20Order" target="_blank" rel="noopener">Graded pricing unavailable ↗</a></dd></div>
+    </dl><div class="rowbtn">
+      <button data-q="own" data-c="c11">+ Own</button>
+      <button data-q="wish" data-c="c11">+ Wish</button>
+      <button class="dots" data-q="more" data-c="c11" title="Add with details">⋯</button></div></article><article class="tile" style="animation-delay:330ms">
+    
+    <div class="lbl"><div class="cn">Rosa's Encouragement</div><div class="sn">Perfect Order · 123/88</div></div>
+    <span class="vtag foil">Holo</span>
+    <span class="sig st">Steady</span>
+    <div class="imgwrap" data-lb="c12"><img src="./Dexora — Scan · Collect · Master_files/low(11).webp" alt="Rosa&#39;s Encouragement" loading="lazy"></div>
+    <dl class="meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Illustrator</dt><dd title="Iori Suzuki">Iori Suzuki</dd></div>
+      <div><dt>Market</dt><dd class="val">$51.54</dd></div>
+      <div><dt>PSA 10</dt><dd class="na"><a class="psa" href="https://www.pricecharting.com/search-products?type=prices&amp;q=Rosa%27s%20Encouragement%20Perfect%20Order" target="_blank" rel="noopener">Graded pricing unavailable ↗</a></dd></div>
+    </dl><div class="rowbtn">
+      <button data-q="own" data-c="c12">+ Own</button>
+      <button data-q="wish" data-c="c12">+ Wish</button>
+      <button class="dots" data-q="more" data-c="c12" title="Add with details">⋯</button></div></article><article class="tile" style="animation-delay:360ms">
+    
+    <div class="lbl"><div class="cn">Mega Chandelure ex</div><div class="sn">Pitch Black · 115/84</div></div>
+    <span class="vtag foil">Holo</span>
+    <span class="sig nw">Just landed</span>
+    <div class="imgwrap" data-lb="c13"><img src="./Dexora — Scan · Collect · Master_files/low(12).webp" alt="Mega Chandelure ex" loading="lazy"></div>
+    <dl class="meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Illustrator</dt><dd title="REND">REND</dd></div>
+      <div><dt>Market</dt><dd class="val">$48.02</dd></div>
+      <div><dt>PSA 10</dt><dd class="na"><a class="psa" href="https://www.pricecharting.com/search-products?type=prices&amp;q=Mega%20Chandelure%20ex%20Pitch%20Black" target="_blank" rel="noopener">Graded pricing unavailable ↗</a></dd></div>
+    </dl><div class="rowbtn">
+      <button data-q="own" data-c="c13">+ Own</button>
+      <button data-q="wish" data-c="c13">+ Wish</button>
+      <button class="dots" data-q="more" data-c="c13" title="Add with details">⋯</button></div></article><article class="tile" style="animation-delay:390ms">
+    
+    <div class="lbl"><div class="cn">Mega Starmie ex</div><div class="sn">Perfect Order · 118/88</div></div>
+    <span class="vtag foil">Holo</span>
+    <span class="sig dn">Buyers below mid</span>
+    <div class="imgwrap" data-lb="c14"><img src="./Dexora — Scan · Collect · Master_files/low(13).webp" alt="Mega Starmie ex" loading="lazy"></div>
+    <dl class="meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Illustrator</dt><dd title="takuyoa">takuyoa</dd></div>
+      <div><dt>Market</dt><dd class="val">$41.48</dd></div>
+      <div><dt>PSA 10</dt><dd class="na"><a class="psa" href="https://www.pricecharting.com/search-products?type=prices&amp;q=Mega%20Starmie%20ex%20Perfect%20Order" target="_blank" rel="noopener">Graded pricing unavailable ↗</a></dd></div>
+    </dl><div class="rowbtn">
+      <button data-q="own" data-c="c14">+ Own</button>
+      <button data-q="wish" data-c="c14">+ Wish</button>
+      <button class="dots" data-q="more" data-c="c14" title="Add with details">⋯</button></div></article><article class="tile" style="animation-delay:420ms">
+    
+    <div class="lbl"><div class="cn">Mega Dragalge ex</div><div class="sn">Chaos Rising · 118/86</div></div>
+    <span class="vtag foil">Holo</span>
+    <span class="sig nw">Just landed</span>
+    <div class="imgwrap" data-lb="c15"><img src="./Dexora — Scan · Collect · Master_files/low(14).webp" alt="Mega Dragalge ex" loading="lazy"></div>
+    <dl class="meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Illustrator</dt><dd title="Kazumasa Yasukuni">Kazumasa Yasukuni</dd></div>
+      <div><dt>Market</dt><dd class="val">$39.13</dd></div>
+      <div><dt>PSA 10</dt><dd class="na"><a class="psa" href="https://www.pricecharting.com/search-products?type=prices&amp;q=Mega%20Dragalge%20ex%20Chaos%20Rising" target="_blank" rel="noopener">Graded pricing unavailable ↗</a></dd></div>
+    </dl><div class="rowbtn">
+      <button data-q="own" data-c="c15">+ Own</button>
+      <button data-q="wish" data-c="c15">+ Wish</button>
+      <button class="dots" data-q="more" data-c="c15" title="Add with details">⋯</button></div></article><article class="tile" style="animation-delay:450ms">
+    
+    <div class="lbl"><div class="cn">Gwynn</div><div class="sn">Pitch Black · 119/84</div></div>
+    <span class="vtag foil">Holo</span>
+    <span class="sig nw">Just landed</span>
+    <div class="imgwrap" data-lb="c16"><img src="./Dexora — Scan · Collect · Master_files/low(15).webp" alt="Gwynn" loading="lazy"></div>
+    <dl class="meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Illustrator</dt><dd title="Naoki Saito">Naoki Saito</dd></div>
+      <div><dt>Market</dt><dd class="val">$36.93</dd></div>
+      <div><dt>PSA 10</dt><dd class="na"><a class="psa" href="https://www.pricecharting.com/search-products?type=prices&amp;q=Gwynn%20Pitch%20Black" target="_blank" rel="noopener">Graded pricing unavailable ↗</a></dd></div>
+    </dl><div class="rowbtn">
+      <button data-q="own" data-c="c16">+ Own</button>
+      <button data-q="wish" data-c="c16">+ Wish</button>
+      <button class="dots" data-q="more" data-c="c16" title="Add with details">⋯</button></div></article><article class="tile" style="animation-delay:480ms">
+    
+    <div class="lbl"><div class="cn">Gladion's Final Battle</div><div class="sn">Pitch Black · 118/84</div></div>
+    <span class="vtag foil">Holo</span>
+    <span class="sig nw">Just landed</span>
+    <div class="imgwrap" data-lb="c17"><img src="./Dexora — Scan · Collect · Master_files/low(16).webp" alt="Gladion&#39;s Final Battle" loading="lazy"></div>
+    <dl class="meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Illustrator</dt><dd title="DOM">DOM</dd></div>
+      <div><dt>Market</dt><dd class="val">$31.27</dd></div>
+      <div><dt>PSA 10</dt><dd class="na"><a class="psa" href="https://www.pricecharting.com/search-products?type=prices&amp;q=Gladion%27s%20Final%20Battle%20Pitch%20Black" target="_blank" rel="noopener">Graded pricing unavailable ↗</a></dd></div>
+    </dl><div class="rowbtn">
+      <button data-q="own" data-c="c17">+ Own</button>
+      <button data-q="wish" data-c="c17">+ Wish</button>
+      <button class="dots" data-q="more" data-c="c17" title="Add with details">⋯</button></div></article><article class="tile" style="animation-delay:510ms">
+    
+    <div class="lbl"><div class="cn">Mega Floette ex</div><div class="sn">Chaos Rising · 117/86</div></div>
+    <span class="vtag foil">Holo</span>
+    <span class="sig nw">Just landed</span>
+    <div class="imgwrap" data-lb="c18"><img src="./Dexora — Scan · Collect · Master_files/low(17).webp" alt="Mega Floette ex" loading="lazy"></div>
+    <dl class="meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Illustrator</dt><dd title="Teeziro">Teeziro</dd></div>
+      <div><dt>Market</dt><dd class="val">$31.15</dd></div>
+      <div><dt>PSA 10</dt><dd class="na"><a class="psa" href="https://www.pricecharting.com/search-products?type=prices&amp;q=Mega%20Floette%20ex%20Chaos%20Rising" target="_blank" rel="noopener">Graded pricing unavailable ↗</a></dd></div>
+    </dl><div class="rowbtn">
+      <button data-q="own" data-c="c18">+ Own</button>
+      <button data-q="wish" data-c="c18">+ Wish</button>
+      <button class="dots" data-q="more" data-c="c18" title="Add with details">⋯</button></div></article><article class="tile" style="animation-delay:540ms">
+    
+    <div class="lbl"><div class="cn">AZ's Tranquility</div><div class="sn">Chaos Rising · 120/86</div></div>
+    <span class="vtag foil">Holo</span>
+    <span class="sig nw">Just landed</span>
+    <div class="imgwrap" data-lb="c19"><img src="./Dexora — Scan · Collect · Master_files/low(18).webp" alt="AZ&#39;s Tranquility" loading="lazy"></div>
+    <dl class="meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Illustrator</dt><dd title="OKACHEKE">OKACHEKE</dd></div>
+      <div><dt>Market</dt><dd class="val">$27.43</dd></div>
+      <div><dt>PSA 10</dt><dd class="na"><a class="psa" href="https://www.pricecharting.com/search-products?type=prices&amp;q=AZ%27s%20Tranquility%20Chaos%20Rising" target="_blank" rel="noopener">Graded pricing unavailable ↗</a></dd></div>
+    </dl><div class="rowbtn">
+      <button data-q="own" data-c="c19">+ Own</button>
+      <button data-q="wish" data-c="c19">+ Wish</button>
+      <button class="dots" data-q="more" data-c="c19" title="Add with details">⋯</button></div></article><article class="tile" style="animation-delay:570ms">
+    
+    <div class="lbl"><div class="cn">Jacinthe</div><div class="sn">Perfect Order · 122/88</div></div>
+    <span class="vtag foil">Holo</span>
+    <span class="sig st">Steady</span>
+    <div class="imgwrap" data-lb="c20"><img src="./Dexora — Scan · Collect · Master_files/low(19).webp" alt="Jacinthe" loading="lazy"></div>
+    <dl class="meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Illustrator</dt><dd title="Souichirou Gunjima">Souichirou Gunjima</dd></div>
+      <div><dt>Market</dt><dd class="val">$24.02</dd></div>
+      <div><dt>PSA 10</dt><dd class="na"><a class="psa" href="https://www.pricecharting.com/search-products?type=prices&amp;q=Jacinthe%20Perfect%20Order" target="_blank" rel="noopener">Graded pricing unavailable ↗</a></dd></div>
+    </dl><div class="rowbtn">
+      <button data-q="own" data-c="c20">+ Own</button>
+      <button data-q="wish" data-c="c20">+ Wish</button>
+      <button class="dots" data-q="more" data-c="c20" title="Add with details">⋯</button></div></article><article class="tile" style="animation-delay:600ms">
+    
+    <div class="lbl"><div class="cn">Roxie's Performance</div><div class="sn">Chaos Rising · 121/86</div></div>
+    <span class="vtag foil">Holo</span>
+    <span class="sig nw">Just landed</span>
+    <div class="imgwrap" data-lb="c21"><img src="./Dexora — Scan · Collect · Master_files/low(20).webp" alt="Roxie&#39;s Performance" loading="lazy"></div>
+    <dl class="meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Illustrator</dt><dd title="Tomowaka">Tomowaka</dd></div>
+      <div><dt>Market</dt><dd class="val">$21.68</dd></div>
+      <div><dt>PSA 10</dt><dd class="na"><a class="psa" href="https://www.pricecharting.com/search-products?type=prices&amp;q=Roxie%27s%20Performance%20Chaos%20Rising" target="_blank" rel="noopener">Graded pricing unavailable ↗</a></dd></div>
+    </dl><div class="rowbtn">
+      <button data-q="own" data-c="c21">+ Own</button>
+      <button data-q="wish" data-c="c21">+ Wish</button>
+      <button class="dots" data-q="more" data-c="c21" title="Add with details">⋯</button></div></article><article class="tile" style="animation-delay:630ms">
+    
+    <div class="lbl"><div class="cn">Clefairy</div><div class="sn">Perfect Order · 094/88</div></div>
+    <span class="vtag foil">Holo</span>
+    <span class="sig dn">Buyers below mid</span>
+    <div class="imgwrap" data-lb="c22"><img src="./Dexora — Scan · Collect · Master_files/low(21).webp" alt="Clefairy" loading="lazy"></div>
+    <dl class="meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Illustrator</dt><dd title="Cona Nitanda">Cona Nitanda</dd></div>
+      <div><dt>Market</dt><dd class="val">$19.08</dd></div>
+      <div><dt>PSA 10</dt><dd class="na"><a class="psa" href="https://www.pricecharting.com/search-products?type=prices&amp;q=Clefairy%20Perfect%20Order" target="_blank" rel="noopener">Graded pricing unavailable ↗</a></dd></div>
+    </dl><div class="rowbtn">
+      <button data-q="own" data-c="c22">+ Own</button>
+      <button data-q="wish" data-c="c22">+ Wish</button>
+      <button class="dots" data-q="more" data-c="c22" title="Add with details">⋯</button></div></article><article class="tile" style="animation-delay:660ms">
+    
+    <div class="lbl"><div class="cn">Misty's Vitality</div><div class="sn">Pitch Black · 111/84</div></div>
+    <span class="vtag foil">Holo</span>
+    <span class="sig nw">Just landed</span>
+    <div class="imgwrap" data-lb="c23"><img src="./Dexora — Scan · Collect · Master_files/low(22).webp" alt="Misty&#39;s Vitality" loading="lazy"></div>
+    <dl class="meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Illustrator</dt><dd title="En Morikura">En Morikura</dd></div>
+      <div><dt>Market</dt><dd class="val">$17.40</dd></div>
+      <div><dt>PSA 10</dt><dd class="na"><a class="psa" href="https://www.pricecharting.com/search-products?type=prices&amp;q=Misty%27s%20Vitality%20Pitch%20Black" target="_blank" rel="noopener">Graded pricing unavailable ↗</a></dd></div>
+    </dl><div class="rowbtn">
+      <button data-q="own" data-c="c23">+ Own</button>
+      <button data-q="wish" data-c="c23">+ Wish</button>
+      <button class="dots" data-q="more" data-c="c23" title="Add with details">⋯</button></div></article><article class="tile" style="animation-delay:690ms">
+    
+    <div class="lbl"><div class="cn">Mega Darkrai ex</div><div class="sn">Pitch Black · 101/84</div></div>
+    <span class="vtag foil">Holo</span>
+    <span class="sig nw">Just landed</span>
+    <div class="imgwrap" data-lb="c24"><img src="./Dexora — Scan · Collect · Master_files/low(23).webp" alt="Mega Darkrai ex" loading="lazy"></div>
+    <dl class="meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Illustrator</dt><dd title="5ban Graphics">5ban Graphics</dd></div>
+      <div><dt>Market</dt><dd class="val">$13.10</dd></div>
+      <div><dt>PSA 10</dt><dd class="na"><a class="psa" href="https://www.pricecharting.com/search-products?type=prices&amp;q=Mega%20Darkrai%20ex%20Pitch%20Black" target="_blank" rel="noopener">Graded pricing unavailable ↗</a></dd></div>
+    </dl><div class="rowbtn">
+      <button data-q="own" data-c="c24">+ Own</button>
+      <button data-q="wish" data-c="c24">+ Wish</button>
+      <button class="dots" data-q="more" data-c="c24" title="Add with details">⋯</button></div></article></div></div>
   </div>
   <div class="block hide" id="mktBlock">
     <h2 class="sec">Market</h2>
@@ -759,7 +1106,7 @@ footer p{max-width:84ch;margin:0 0 12px;line-height:1.5}footer strong{color:var(
   <p class="fine"><b>Dexora is an independent fan project.</b> Not affiliated with, endorsed by, or connected to
     The Pokémon Company, Nintendo, Game Freak, Creatures Inc., Wizards of the Coast or TCGplayer. Pokémon and all
     card images are © and ™ their respective owners; they appear here for identification only.</p>
-  <p class="fine">Card data from pokemontcg.io and tcgdex.net. Prices are TCGplayer market figures — an average of
+  <p class="fine">Card data and prices from tcgdex.net; price figures originate with TCGplayer — an average of
     recent sales — and are indicative, not quotes; nothing here is investment advice. PSA 10 pricing has no free
     public source, so those fields link out. Non-English coverage is partial. Card scans are Unlimited printings.
     Your collection, wish list, goals and scans are stored in this browser only. <button class="lnk" id="moreInfo">Full notes</button></p>
@@ -788,12 +1135,8 @@ const REGIONS = [[1,"Kanto",1,151,1996,"Red & Green"],[2,"Johto",152,251,1999,"G
 const LANGS = [["en","English",1],["ja","日本語 Japanese",4],["zh-tw","繁體中文 Chinese (Trad.)",5],
   ["zh-cn","简体中文 Chinese (Simp.)",6],["ko","한국어 Korean",7],["de","Deutsch German",8],["fr","Français French",9],
   ["es","Español Spanish",10],["it","Italiano Italian",11],["pt-br","Português (BR)",12],["th","ไทย Thai",1],["id","Indonesia",1]];
-const FIRST_ED_SETS = new Set(["base1","base2","base3","base5","gym1","gym2","neo1","neo2","neo3","neo4","ecard1","ecard2","ecard3"]);
-const VINTAGE = [...FIRST_ED_SETS,"base4","base6"];
-const NEW_SETS = ["me5","me4","me3","me2pt5","me2","me1"];
-const VORDER = ["1stEdition","1stEditionHolofoil","unlimited","unlimitedHolofoil","normal","holofoil","reverseHolofoil"];
-const VLABEL = {normal:"Non-Holo",holofoil:"Holo",reverseHolofoil:"Reverse Holo","1stEdition":"1st Edition",
-  unlimited:"Unlimited","1stEditionHolofoil":"1st Ed. Holo",unlimitedHolofoil:"Unlimited Holo"};
+const VINTAGE = ["base1","base2","base3","base5","gym1","gym2","neo1","neo2","neo3","neo4",
+  "ecard1","ecard2","ecard3","base4","base6"];
 const SUBTYPES = ["","V","VMAX","VSTAR","ex","EX","GX","MEGA","BREAK","Radiant","Prime","LEGEND","TAG TEAM","Star","Level-Up","Basic","Stage 1","Stage 2"];
 const RARITIES = ["","Common","Uncommon","Rare","Rare Holo","Rare Holo EX","Rare Holo GX","Rare Holo V","Rare Holo VMAX",
   "Rare Ultra","Rare Secret","Rare Rainbow","Illustration Rare","Special Illustration Rare","Hyper Rare","Double Rare","Ultra Rare"];
@@ -864,83 +1207,89 @@ const uid = () => Date.now().toString(36)+Math.random().toString(36).slice(2,7);
    while pending, and cached to IndexedDB so a second look is instant.
 ------------------------------------------------------------------ */
 const memCache = new Map();
-const withTimeout = (p, ms) => Promise.race([p, new Promise(r => setTimeout(() => r(undefined), ms))]);
+const withTimeout = (p, ms, fb = null) =>
+  Promise.race([Promise.resolve(p).catch(() => fb), new Promise(r => setTimeout(() => r(fb), ms))]);
+
+/* IndexedDB is a nice-to-have. It is opened once, behind a timeout, and if anything
+   about it misbehaves it is switched off for the session — it can never stall a request. */
 const ApiCache = (() => {
-  /* Sandboxed frames and private windows can leave indexedDB.open hanging forever.
-     Every call is raced against a timer, and one failure disables it for the session. */
-  let db = null, ready = null, dead = false;
+  let ready = null, dead = false;
   const open = () => {
     if (dead) return Promise.resolve(null);
-    if (ready) return ready;
-    ready = new Promise(res => {
+    if (ready) return ready;                       /* already raced — safe to share */
+    const attempt = new Promise(res => {
       let r;
       try { r = indexedDB.open("dexora-api", 1); }
-      catch (e) { dead = true; return res(null); }
+      catch (e) { return res(null); }
       r.onupgradeneeded = () => { try { r.result.createObjectStore("c"); } catch (e) {} };
-      r.onsuccess = () => { db = r.result; res(db); };
-      r.onerror = () => { dead = true; res(null); };
-      r.onblocked = () => { dead = true; res(null); };
+      r.onsuccess = () => res(r.result);
+      r.onerror = () => res(null);
+      r.onblocked = () => res(null);
     });
-    return withTimeout(ready, 900).then(d => { if (d === undefined) { dead = true; return null; } return d; });
+    ready = withTimeout(attempt, 1200, null).then(d => { if (!d) dead = true; return d; });
+    return ready;
   };
-  const run = (mode, fn, ms) => withTimeout(new Promise(async res => {
+  const run = (mode, fn, ms) => withTimeout((async () => {
     const d = await open();
-    if (!d) return res(null);
-    try {
-      const t = d.transaction("c", mode), s = t.objectStore("c"), q = fn(s);
-      t.oncomplete = () => res(q && q.result);
-      t.onerror = () => res(null);
-      t.onabort = () => res(null);
-    } catch (e) { res(null); }
-  }), ms).then(v => v === undefined ? null : v);
-  return {
-    get: k => run("readonly", s => s.get(k), 700),
-    put: (k, v) => { run("readwrite", s => s.put(v, k), 1500); }
-  };
+    if (!d) return null;
+    return new Promise(res => {
+      try {
+        const t = d.transaction("c", mode), q = fn(t.objectStore("c"));
+        t.oncomplete = () => res(q && q.result);
+        t.onerror = t.onabort = () => res(null);
+      } catch (e) { dead = true; res(null); }
+    });
+  })(), ms, null);
+  return { get: k => run("readonly", s => s.get(k), 800), put: (k, v) => { run("readwrite", s => s.put(v, k), 2000); } };
 })();
-const TTL = 12*60*60*1000;                 /* card data barely moves inside a day */
+
+const TTL = 12*60*60*1000;
 const inflight = new Map();
 let active = 0; const waiting = [];
 const gate = () => active < 3 ? (active++, Promise.resolve())
   : new Promise(r => waiting.push(() => { active++; r(); }));
 const release = () => { active--; const n = waiting.shift(); if (n) n(); };
 
-async function rawFetch(url, timeout = 13000){
-  const ac = new AbortController();
-  const t = setTimeout(() => ac.abort(), timeout);
-  try{
-    const r = await fetch(url, { signal: ac.signal, cache: "default" });
-    if(!r.ok) throw new Error("HTTP " + r.status);
+let netBlocked = false;
+async function rawFetch(url, timeout = 14000){
+  let ac = null, t = null;
+  try { ac = new AbortController(); t = setTimeout(() => ac.abort(), timeout); } catch (e) { ac = null; }
+  try {
+    const r = await fetch(url, ac ? { signal: ac.signal } : undefined);
+    if (!r.ok) { const err = new Error("HTTP " + r.status); err.status = r.status; throw err; }
     return await r.json();
-  } finally { clearTimeout(t); }
+  } finally { if (t) clearTimeout(t); }
 }
+
 async function jget(url, tries = 8){
   const mem = memCache.get(url);
   if (mem && Date.now() - mem.t < TTL) return mem.d;
   if (inflight.has(url)) return inflight.get(url);
 
   const p = (async () => {
+    /* cache read is itself raced, so a wedged store can't hold up the network */
     let stale = null;
-    try {
-      const hit = await ApiCache.get(url);
-      if (hit && hit.d) {
-        if (Date.now() - hit.t < TTL) { memCache.set(url, hit); return hit.d; }
-        stale = hit.d;
-      }
-    } catch (e) { /* cache is an optimisation, never a dependency */ }
+    const hit = await withTimeout(ApiCache.get(url), 900, null);
+    if (hit && hit.d) {
+      if (Date.now() - hit.t < TTL) { memCache.set(url, hit); return hit.d; }
+      stale = hit.d;
+    }
 
-    let lastErr;
+    let lastErr, blocked = 0;
     for (let i = 0; i < tries; i++){
       await gate();
       try {
         const d = await rawFetch(url);
         const rec = { t: Date.now(), d };
         memCache.set(url, rec);
-        try { ApiCache.put(url, rec); } catch (e) {}
+        ApiCache.put(url, rec);
+        netBlocked = false;
         return d;
       } catch (e) {
         lastErr = e;
-        /* the API 500s instantly and at random, so the first couple of retries are quick */
+        /* a TypeError means the request never left the page: offline, or a frame that
+           forbids outbound connections. Retrying that is pointless. */
+        if (e && e.name === "TypeError") { if (++blocked >= 2) { netBlocked = true; break; } }
         const wait = [200, 450, 900, 1600, 2600, 3800, 5000][i] ?? 6000;
         await new Promise(s => setTimeout(s, wait + Math.random() * 200));
       } finally { release(); }
@@ -952,6 +1301,10 @@ async function jget(url, tries = 8){
   inflight.set(url, p);
   try { return await p; } finally { inflight.delete(url); }
 }
+const netMsg = () => netBlocked
+  ? `<b>This page can't reach the internet</b>Nothing is wrong with your connection — the frame this file is
+     running in is blocking outbound requests. Download the file and open it directly, or host it, and it will work.`
+  : `<b>The card API didn't answer</b>It returns errors at random under load. Anything already loaded is cached.`;
 function exportCSV(objs,name){ if(!objs.length) return;
   const h=Object.keys(objs[0]), q=s=>`"${String(s??"").replace(/"/g,'""')}"`;
   const csv=[h.join(",")].concat(objs.map(o=>h.map(x=>q(o[x])).join(","))).join("\n");
@@ -971,33 +1324,75 @@ function monOf(cardName){
 }
 
 /* ---------- card rows + signal ---------- */
-function signalOf(c,prices){
-  const rel=c.set.releaseDate?new Date(c.set.releaseDate.replace(/\//g,"-")):null;
-  const days=rel?(Date.now()-rel)/864e5:9999;
+/* tcgdex price keys, mapped onto the printing labels used everywhere else */
+const TCGD_VARIANTS = [
+  ["1st-edition",           "1st Edition"],
+  ["1st-edition-holofoil",  "1st Ed. Holo"],
+  ["unlimited",             "Unlimited"],
+  ["unlimited-holofoil",    "Unlimited Holo"],
+  ["normal",                "Non-Holo"],
+  ["holofoil",              "Holo"],
+  ["reverse-holofoil",      "Reverse Holo"]
+];
+/* Build the printing rows for one tcgdex card detail object. */
+function cardRows(c){
+  const set = c.set || {};
+  const meta = setMetaFor(set.id) || {};
+  const date = meta.releaseDate || (set.releaseDate||"").replace(/-/g,"/") || "";
+  const tp = ((c.pricing||{}).tcgplayer)||{};
+  const cm = ((c.pricing||{}).cardmarket)||{};
+  const img = c.image ? c.image+"/low.webp" : "";
+  const big = c.image ? c.image+"/high.webp" : "";
+  const base = {
+    n:c.name||UNK, s:meta.name||set.name||UNK, sid:set.id||"",
+    y:(date||"").slice(0,4)||UNK, d:date,
+    num:c.localId||"", tot:(set.cardCount&&set.cardCount.official)||meta.printedTotal||"",
+    a:c.illustrator||UNK, r:c.rarity&&c.rarity!=="None"?c.rarity:UNK,
+    img, big, id:c.id, sig:signalOf(date,tp)
+  };
+  const rows=[];
+  for(const [key,label] of TCGD_VARIANTS){
+    const p=tp[key];
+    if(p&&typeof p.marketPrice==="number") rows.push({...base, v:label, mk:p.marketPrice});
+  }
+  if(!rows.length){
+    /* no pricing on file — fall back to whichever printings the card is flagged as having */
+    const vr=c.variants||{};
+    const marks=[];
+    if(vr.firstEdition) marks.push(vr.holo?"1st Ed. Holo":"1st Edition");
+    if(vr.holo) marks.push("Holo");
+    if(vr.reverse) marks.push("Reverse Holo");
+    if(vr.normal) marks.push("Non-Holo");
+    if(!marks.length) marks.push("Standard Print");
+    const eur = typeof cm.trend==="number" ? cm.trend : null;
+    marks.forEach(v=>rows.push({...base, v, mk:null, eur}));
+  }
+  return rows;
+}
+function signalOf(date,tp){
+  const rel = date ? new Date(date.replace(/\//g,"-")) : null;
+  const days = rel && !isNaN(rel) ? (Date.now()-rel)/864e5 : 9999;
   if(days<0) return {k:"nw",t:"Not out yet"};
   if(days<120) return {k:"nw",t:"Just landed"};
-  const p=prices||{};
-  const pick=["holofoil","normal","reverseHolofoil","1stEditionHolofoil","unlimitedHolofoil"].map(x=>p[x]).find(Boolean);
-  if(!pick||typeof pick.mid!=="number"||typeof pick.market!=="number"||pick.market<3) return {k:"st",t:"Steady"};
-  const r=pick.market/pick.mid;
+  const p=["holofoil","normal","reverse-holofoil","1st-edition-holofoil","unlimited-holofoil"]
+    .map(k=>tp[k]).find(Boolean);
+  if(!p||typeof p.midPrice!=="number"||typeof p.marketPrice!=="number"||p.marketPrice<3) return {k:"st",t:"Steady"};
+  const r=p.marketPrice/p.midPrice;
   if(r>=1.15) return {k:"up",t:"Buyers above mid"};
   if(r<=0.85) return {k:"dn",t:"Buyers below mid"};
   return {k:"st",t:"Steady"};
 }
-function cardRows(c){
-  const prices=(c.tcgplayer||{}).prices||{};
-  const mk=k=>{ const v=prices[k]&&prices[k].market; return typeof v==="number"?v:null; };
-  let keys=VORDER.filter(k=>prices[k]);
-  if(FIRST_ED_SETS.has(c.set.id)&&!keys.some(k=>k.startsWith("1st")))
-    keys.unshift((c.rarity||"").toLowerCase().includes("holo")?"1stEditionHolofoil":"1stEdition");
-  const sig=signalOf(c,prices);
-  return (keys.length?keys:[null]).map(k=>({
-    n:c.name, s:c.set.name, sid:c.set.id, y:(c.set.releaseDate||"").slice(0,4), d:c.set.releaseDate||"",
-    num:c.number, tot:c.set.printedTotal||"", a:c.artist||UNK, r:c.rarity||UNK,
-    v:k?VLABEL[k]:"Standard Print", mk:k?mk(k):null, img:(c.images||{}).small,
-    big:(c.images||{}).large||(c.images||{}).small, id:c.id, sig }));
+/* Pull details for a list of tcgdex card stubs, a few at a time, newest data first. */
+async function expand(list, lang, onBatch){
+  const out=[];
+  for(let i=0;i<list.length;i+=10){
+    const batch=await Promise.all(list.slice(i,i+10).map(c=>
+      jget(`https://api.tcgdex.net/v2/${lang}/cards/${encodeURIComponent(c.id)}`,4).catch(()=>null)));
+    batch.forEach(c=>{ if(c) out.push(...cardRows(c)); });
+    if(onBatch) onBatch(out, i+10<list.length);
+  }
+  return out;
 }
-const bestRow = rs => rs.reduce((b,r)=>((r.mk||0)>(b.mk||0)?r:b), rs[0]);
 
 /* ---------- tiles + registry (for lightbox / quick add) ---------- */
 const REG = new Map(); let regN = 0;
@@ -1006,7 +1401,7 @@ const vcls = v => v==="Trophy Promo"?"vtag trophy":v.includes("1st")?"vtag first
 const psaURL = r => `https://www.pricecharting.com/search-products?type=prices&q=${encodeURIComponent(r.n+" "+r.s)}`;
 function tileHTML(r,i,opt){
   opt=opt||{};
-  const cid="c"+(++regN); REG.set(cid,r); if(r.id) REGBYID.set(r.id,r);
+  const cid="c"+(++regN); REG.set(cid,r);
   let disc="";
   if(r.trophy) disc=`<p class="disc">${esc(r.note)}</p>`;
   else if(r.v.includes("1st")) disc=`<p class="disc">Scan shown is the Unlimited printing. No public source carries a 1st Edition scan, so the stamp is not pictured.</p>`;
@@ -1097,17 +1492,22 @@ async function loadTrending(){
   const el=document.getElementById("trending");
   if(trendCache) return drawTrending(trendCache);
   try{
-    const sets=NEW_SETS.map(s=>`set.id:${s}`).join(" OR ");
-    const q=`(${sets}) (rarity:"Special Illustration Rare" OR rarity:"Illustration Rare" OR rarity:"Hyper Rare")`;
-    const d=await jget(`https://api.pokemontcg.io/v2/cards?q=${encodeURIComponent(q)}&pageSize=250`);
-    const rs=(d.data||[]).map(c=>bestRow(cardRows(c))).filter(r=>r.mk!=null).sort((a,b)=>b.mk-a.mk);
+    const newest=[...SETS].filter(s=>s.releaseDate&&s.printedTotal>40)
+      .sort((a,b)=>b.releaseDate.localeCompare(a.releaseDate)).slice(0,4);
+    const stubs=[];
+    for(const s of newest){
+      const full=await jget(`https://api.tcgdex.net/v2/en/sets/${encodeURIComponent(s.id)}`).catch(()=>null);
+      if(full&&full.cards) stubs.push(...full.cards.slice(-46));   /* the chase cards sit at the end of a set */
+    }
+    const rowsT=await expand(stubs,"en");
+    const rs=Object.values(rowsT.reduce((m,r)=>{ const b=m[r.id]; if(!b||(r.mk||0)>(b.mk||0)) m[r.id]=r; return m; },{}))
+      .filter(r=>r.mk!=null).sort((a,b)=>b.mk-a.mk);
     trendCache=rs.slice(0,24); drawTrending(trendCache);
-  }catch(e){ el.innerHTML=`<div class="msg"><b>The price feed didn't answer</b>
-      <br><button id="retryTrend">Try again</button></div>`;
+  }catch(e){ el.innerHTML=`<div class="msg">${netMsg()}<br><br><button id="retryTrend">Try again</button></div>`;
     const rb=document.getElementById("retryTrend"); if(rb) rb.onclick=()=>{ trendCache=null; loadTrending(); }; }
 }
 function drawTrending(rs){
-  document.getElementById("trendSub").textContent = rs.length ? rs[0].s+" and five more" : "";
+  document.getElementById("trendSub").textContent = rs.length ? rs[0].s+" and more" : "";
   document.getElementById("trending").innerHTML=`<div class="grid">${rs.map((r,i)=>tileHTML(r,i,{sig:true,rank:i<3?"#"+(i+1):""})).join("")}</div>`;
 }
 document.getElementById("mktBtn").onclick = async () => {
@@ -1116,16 +1516,21 @@ document.getElementById("mktBtn").onclick = async () => {
   if(mktCache) return drawMarket();
   document.getElementById("mktOut").innerHTML=`<div class="msg"><div class="spin"></div>Pricing the vintage era and the newest chase cards…</div>`;
   try{
-    const vin=VINTAGE.map(s=>`set.id:${s}`).join(" OR ");
-    const qa=`(${vin}) (rarity:"Rare Holo" OR rarity:"Rare Secret")`;
-    const qb=`(${NEW_SETS.map(s=>`set.id:${s}`).join(" OR ")}) (rarity:"Special Illustration Rare" OR rarity:"Hyper Rare")`;
-    const [a,b]=await Promise.all([
-      jget(`https://api.pokemontcg.io/v2/cards?q=${encodeURIComponent(qa)}&pageSize=250`),
-      jget(`https://api.pokemontcg.io/v2/cards?q=${encodeURIComponent(qb)}&pageSize=250`)]);
-    mktCache=[...(a.data||[]),...(b.data||[])].map(c=>bestRow(cardRows(c))).filter(r=>r.mk!=null).sort((x,y)=>y.mk-x.mk);
+    const stubs=[];
+    for(const id of VINTAGE){
+      const full=await jget(`https://api.tcgdex.net/v2/en/sets/${encodeURIComponent(id)}`).catch(()=>null);
+      if(full&&full.cards) stubs.push(...full.cards);
+    }
+    const rowsM=await expand(stubs,"en",(partial)=>{
+      mktCache=Object.values(partial.reduce((m,r)=>{ const b=m[r.id]; if(!b||(r.mk||0)>(b.mk||0)) m[r.id]=r; return m; },{}))
+        .filter(r=>r.mk!=null).sort((x,y)=>y.mk-x.mk);
+      drawMarket();
+    });
+    mktCache=Object.values(rowsM.reduce((m,r)=>{ const b=m[r.id]; if(!b||(r.mk||0)>(b.mk||0)) m[r.id]=r; return m; },{}))
+      .filter(r=>r.mk!=null).sort((x,y)=>y.mk-x.mk);
     drawMarket();
   }catch(e){ document.getElementById("mktOut").innerHTML=
-      `<div class="msg"><b>The price feed didn't answer</b><br><button id="retryMkt">Try again</button></div>`;
+      `<div class="msg">${netMsg()}<br><br><button id="retryMkt">Try again</button></div>`;
     const rb=document.getElementById("retryMkt"); if(rb) rb.onclick=()=>{ mktCache=null; document.getElementById("mktBtn").click(); }; }
 };
 let mktView="top";
@@ -1133,7 +1538,7 @@ function drawMarket(){
   const views=[["top","Top 10 by value"],["up","Buyers above mid"],["dn","Buyers below mid"],["nw","Just landed"]];
   document.getElementById("mktFilters").innerHTML=views.map(([k,l])=>
     `<button class="chip" data-mv="${k}" aria-pressed="${mktView===k}">${l}</button>`).join("")+
-    `<span class="note">universe: 15 vintage sets + 6 newest sets · <b>${mktCache.length}</b> cards priced</span>`;
+    `<span class="note">universe: the 15 vintage sets · <b>${mktCache.length}</b> cards priced</span>`;
   const rs = mktView==="top" ? [ILLUSTRATOR,...mktCache.slice(0,10)] : mktCache.filter(r=>r.sig&&r.sig.k===mktView).slice(0,24);
   document.getElementById("mktOut").innerHTML = rs.length
     ? `<div class="grid">${rs.map((r,i)=>tileHTML(r,i,{sig:mktView!=="top",rank:mktView==="top"?(i===0?"Record":"#"+i):""})).join("")}</div>`
@@ -1249,16 +1654,19 @@ document.getElementById("pkSearch").oninput = e => {
 document.getElementById("pkSearchRes").onclick = e => { const b=e.target.closest("[data-mon]"); if(b) select(DEX[+b.dataset.mon-1]); };
 
 /* ---------- sets ---------- */
-let SETS=null;
-async function getSets(){ if(SETS) return SETS;
-  const d=await jget("https://api.pokemontcg.io/v2/sets?pageSize=600");
-  SETS=(d.data||[]); return SETS; }
-async function openSets(){
+/* The 218-set index is baked in: tcgdex only exposes release dates on the
+   single-set endpoint, and fetching 218 of those at runtime would be absurd. */
+const SETS = [{"id":"miscp","name":"Miscellaneous Promos","series":"Miscellaneous","releaseDate":"1996/01/01","printedTotal":1,"total":1,"logo":""},{"id":"base1","name":"Base Set","series":"Base","releaseDate":"1999/01/09","printedTotal":102,"total":102,"logo":"https://assets.tcgdex.net/en/base/base1/logo"},{"id":"base2","name":"Jungle","series":"Base","releaseDate":"1999/06/16","printedTotal":64,"total":64,"logo":"https://assets.tcgdex.net/en/base/base2/logo"},{"id":"basep","name":"Wizards Black Star Promos","series":"Base","releaseDate":"1999/07/01","printedTotal":53,"total":53,"logo":"https://assets.tcgdex.net/en/base/basep/logo"},{"id":"wp","name":"W Promotional","series":"Base","releaseDate":"1999/09/01","printedTotal":7,"total":7,"logo":""},{"id":"base3","name":"Fossil","series":"Base","releaseDate":"1999/10/10","printedTotal":62,"total":62,"logo":"https://assets.tcgdex.net/en/base/base3/logo"},{"id":"jumbo","name":"Jumbo cards","series":"Miscellaneous","releaseDate":"2000/02/01","printedTotal":160,"total":160,"logo":""},{"id":"base4","name":"Base Set 2","series":"Base","releaseDate":"2000/02/24","printedTotal":130,"total":130,"logo":"https://assets.tcgdex.net/en/base/base4/logo"},{"id":"base5","name":"Team Rocket","series":"Base","releaseDate":"2000/04/24","printedTotal":82,"total":83,"logo":"https://assets.tcgdex.net/en/base/base5/logo"},{"id":"gym1","name":"Gym Heroes","series":"Gym","releaseDate":"2000/08/14","printedTotal":132,"total":132,"logo":"https://assets.tcgdex.net/en/gym/gym1/logo"},{"id":"gym2","name":"Gym Challenge","series":"Gym","releaseDate":"2000/10/16","printedTotal":132,"total":132,"logo":"https://assets.tcgdex.net/en/gym/gym2/logo"},{"id":"neo1","name":"Neo Genesis","series":"Neo","releaseDate":"2000/12/16","printedTotal":111,"total":111,"logo":"https://assets.tcgdex.net/en/neo/neo1/logo"},{"id":"neo2","name":"Neo Discovery","series":"Neo","releaseDate":"2001/06/01","printedTotal":75,"total":75,"logo":"https://assets.tcgdex.net/en/neo/neo2/logo"},{"id":"si1","name":"Southern Islands","series":"Neo","releaseDate":"2001/07/31","printedTotal":18,"total":18,"logo":"https://assets.tcgdex.net/en/neo/si1/logo"},{"id":"neo3","name":"Neo Revelation","series":"Neo","releaseDate":"2001/09/21","printedTotal":64,"total":66,"logo":"https://assets.tcgdex.net/en/neo/neo3/logo"},{"id":"neo4","name":"Neo Destiny","series":"Neo","releaseDate":"2002/02/28","printedTotal":105,"total":113,"logo":"https://assets.tcgdex.net/en/neo/neo4/logo"},{"id":"lc","name":"Legendary Collection","series":"Legendary Collection","releaseDate":"2002/05/24","printedTotal":110,"total":110,"logo":"https://assets.tcgdex.net/en/lc/lc/logo"},{"id":"sp","name":"Sample","series":"E-Card","releaseDate":"2002/08/01","printedTotal":10,"total":10,"logo":""},{"id":"ecard1","name":"Expedition Base Set","series":"E-Card","releaseDate":"2002/09/15","printedTotal":165,"total":165,"logo":"https://assets.tcgdex.net/en/ecard/ecard1/logo"},{"id":"bog","name":"Best of game","series":"E-Card","releaseDate":"2002/12/01","printedTotal":9,"total":9,"logo":""},{"id":"ecard2","name":"Aquapolis","series":"E-Card","releaseDate":"2003/01/15","printedTotal":147,"total":185,"logo":"https://assets.tcgdex.net/en/ecard/ecard2/logo"},{"id":"ecard3","name":"Skyridge","series":"E-Card","releaseDate":"2003/05/12","printedTotal":144,"total":182,"logo":"https://assets.tcgdex.net/en/ecard/ecard3/logo"},{"id":"ex1","name":"Ruby & Sapphire","series":"EX","releaseDate":"2003/07/01","printedTotal":109,"total":109,"logo":"https://assets.tcgdex.net/en/ex/ex1/logo"},{"id":"ex2","name":"Sandstorm","series":"EX","releaseDate":"2003/09/18","printedTotal":100,"total":100,"logo":"https://assets.tcgdex.net/en/ex/ex2/logo"},{"id":"np","name":"Nintendo Black Star Promos","series":"POP","releaseDate":"2003/10/01","printedTotal":40,"total":40,"logo":"https://assets.tcgdex.net/en/pop/np/logo"},{"id":"ex3","name":"Dragon","series":"EX","releaseDate":"2003/11/24","printedTotal":97,"total":100,"logo":"https://assets.tcgdex.net/en/ex/ex3/logo"},{"id":"ex4","name":"Team Magma vs Team Aqua","series":"EX","releaseDate":"2004/03/01","printedTotal":95,"total":97,"logo":"https://assets.tcgdex.net/en/ex/ex4/logo"},{"id":"ex5","name":"Hidden Legends","series":"EX","releaseDate":"2004/06/01","printedTotal":101,"total":102,"logo":"https://assets.tcgdex.net/en/ex/ex5/logo"},{"id":"tk-ex-latia","name":"EX trainer Kit (Latias)","series":"Trainer kits","releaseDate":"2004/07/01","printedTotal":10,"total":10,"logo":""},{"id":"tk-ex-latio","name":"EX trainer Kit (Latios)","series":"Trainer kits","releaseDate":"2004/07/01","printedTotal":10,"total":10,"logo":""},{"id":"ex5.5","name":"Poké Card Creator Pack","series":"EX","releaseDate":"2004/07/01","printedTotal":5,"total":5,"logo":""},{"id":"pop1","name":"POP Series 1","series":"POP","releaseDate":"2004/09/01","printedTotal":17,"total":17,"logo":"https://assets.tcgdex.net/en/pop/pop1/logo"},{"id":"ex6","name":"FireRed & LeafGreen","series":"EX","releaseDate":"2004/09/01","printedTotal":112,"total":116,"logo":"https://assets.tcgdex.net/en/ex/ex6/logo"},{"id":"ex7","name":"Team Rocket Returns","series":"EX","releaseDate":"2004/11/01","printedTotal":109,"total":111,"logo":"https://assets.tcgdex.net/en/ex/ex7/logo"},{"id":"ex8","name":"Deoxys","series":"EX","releaseDate":"2005/02/01","printedTotal":107,"total":108,"logo":"https://assets.tcgdex.net/en/ex/ex8/logo"},{"id":"ex9","name":"Emerald","series":"EX","releaseDate":"2005/05/09","printedTotal":106,"total":107,"logo":"https://assets.tcgdex.net/en/ex/ex9/logo"},{"id":"pop2","name":"POP Series 2","series":"POP","releaseDate":"2005/08/01","printedTotal":17,"total":17,"logo":"https://assets.tcgdex.net/en/pop/pop2/logo"},{"id":"ex10","name":"Unseen Forces","series":"EX","releaseDate":"2005/08/22","printedTotal":115,"total":117,"logo":"https://assets.tcgdex.net/en/ex/ex10/logo"},{"id":"exu","name":"Unseen Forces Unown Collection","series":"EX","releaseDate":"2005/08/22","printedTotal":28,"total":28,"logo":""},{"id":"ex11","name":"Delta Species","series":"EX","releaseDate":"2005/10/31","printedTotal":113,"total":114,"logo":"https://assets.tcgdex.net/en/ex/ex11/logo"},{"id":"ex12","name":"Legend Maker","series":"EX","releaseDate":"2006/02/13","printedTotal":92,"total":93,"logo":"https://assets.tcgdex.net/en/ex/ex12/logo"},{"id":"tk-ex-m","name":"EX trainer Kit 2 (Minun)","series":"Trainer kits","releaseDate":"2006/03/01","printedTotal":12,"total":12,"logo":""},{"id":"tk-ex-p","name":"EX trainer Kit 2 (Plusle)","series":"Trainer kits","releaseDate":"2006/03/01","printedTotal":12,"total":12,"logo":""},{"id":"pop3","name":"POP Series 3","series":"POP","releaseDate":"2006/04/01","printedTotal":17,"total":17,"logo":"https://assets.tcgdex.net/en/pop/pop3/logo"},{"id":"ex13","name":"Holon Phantoms","series":"EX","releaseDate":"2006/05/03","printedTotal":110,"total":111,"logo":"https://assets.tcgdex.net/en/ex/ex13/logo"},{"id":"pop4","name":"POP Series 4","series":"POP","releaseDate":"2006/08/01","printedTotal":17,"total":17,"logo":"https://assets.tcgdex.net/en/pop/pop4/logo"},{"id":"ex14","name":"Crystal Guardians","series":"EX","releaseDate":"2006/08/30","printedTotal":100,"total":100,"logo":"https://assets.tcgdex.net/en/ex/ex14/logo"},{"id":"ex15","name":"Dragon Frontiers","series":"EX","releaseDate":"2006/11/08","printedTotal":101,"total":101,"logo":"https://assets.tcgdex.net/en/ex/ex15/logo"},{"id":"ex16","name":"Power Keepers","series":"EX","releaseDate":"2007/02/17","printedTotal":108,"total":108,"logo":"https://assets.tcgdex.net/en/ex/ex16/logo"},{"id":"pop5","name":"POP Series 5","series":"POP","releaseDate":"2007/03/01","printedTotal":17,"total":17,"logo":"https://assets.tcgdex.net/en/pop/pop5/logo"},{"id":"dpp","name":"DP Black Star Promos","series":"Diamond & Pearl","releaseDate":"2007/05/01","printedTotal":56,"total":56,"logo":"https://assets.tcgdex.net/en/dp/dpp/logo"},{"id":"dp1","name":"Diamond & Pearl","series":"Diamond & Pearl","releaseDate":"2007/05/01","printedTotal":130,"total":130,"logo":"https://assets.tcgdex.net/en/dp/dp1/logo"},{"id":"dp2","name":"Mysterious Treasures","series":"Diamond & Pearl","releaseDate":"2007/08/01","printedTotal":123,"total":124,"logo":"https://assets.tcgdex.net/en/dp/dp2/logo"},{"id":"tk-dp-l","name":"DP trainer Kit (Lucario)","series":"Trainer kits","releaseDate":"2007/09/01","printedTotal":11,"total":11,"logo":""},{"id":"tk-dp-m","name":"DP trainer Kit (Manaphy)","series":"Trainer kits","releaseDate":"2007/09/01","printedTotal":12,"total":12,"logo":""},{"id":"pop6","name":"POP Series 6","series":"POP","releaseDate":"2007/09/01","printedTotal":17,"total":17,"logo":"https://assets.tcgdex.net/en/pop/pop6/logo"},{"id":"dp3","name":"Secret Wonders","series":"Diamond & Pearl","releaseDate":"2007/11/01","printedTotal":132,"total":132,"logo":"https://assets.tcgdex.net/en/dp/dp3/logo"},{"id":"dp4","name":"Great Encounters","series":"Diamond & Pearl","releaseDate":"2008/02/01","printedTotal":106,"total":106,"logo":"https://assets.tcgdex.net/en/dp/dp4/logo"},{"id":"pop7","name":"POP Series 7","series":"POP","releaseDate":"2008/03/01","printedTotal":17,"total":17,"logo":"https://assets.tcgdex.net/en/pop/pop7/logo"},{"id":"dp5","name":"Majestic Dawn","series":"Diamond & Pearl","releaseDate":"2008/05/01","printedTotal":100,"total":100,"logo":"https://assets.tcgdex.net/en/dp/dp5/logo"},{"id":"dp6","name":"Legends Awakened","series":"Diamond & Pearl","releaseDate":"2008/08/01","printedTotal":146,"total":146,"logo":"https://assets.tcgdex.net/en/dp/dp6/logo"},{"id":"pop8","name":"POP Series 8","series":"POP","releaseDate":"2008/09/01","printedTotal":17,"total":17,"logo":"https://assets.tcgdex.net/en/pop/pop8/logo"},{"id":"dp7","name":"Stormfront","series":"Diamond & Pearl","releaseDate":"2008/11/01","printedTotal":100,"total":106,"logo":"https://assets.tcgdex.net/en/dp/dp7/logo"},{"id":"pl1","name":"Platinum","series":"Platinum","releaseDate":"2009/02/11","printedTotal":127,"total":133,"logo":"https://assets.tcgdex.net/en/pl/pl1/logo"},{"id":"pop9","name":"POP Series 9","series":"POP","releaseDate":"2009/03/01","printedTotal":17,"total":17,"logo":"https://assets.tcgdex.net/en/pop/pop9/logo"},{"id":"pl2","name":"Rising Rivals","series":"Platinum","releaseDate":"2009/05/16","printedTotal":111,"total":120,"logo":"https://assets.tcgdex.net/en/pl/pl2/logo"},{"id":"pl3","name":"Supreme Victors","series":"Platinum","releaseDate":"2009/08/19","printedTotal":147,"total":153,"logo":"https://assets.tcgdex.net/en/pl/pl3/logo"},{"id":"pl4","name":"Arceus","series":"Platinum","releaseDate":"2009/11/04","printedTotal":99,"total":111,"logo":"https://assets.tcgdex.net/en/pl/pl4/logo"},{"id":"ru1","name":"Pokémon Rumble","series":"Platinum","releaseDate":"2009/12/02","printedTotal":16,"total":16,"logo":"https://assets.tcgdex.net/en/pl/ru1/logo"},{"id":"hgss1","name":"HeartGold SoulSilver","series":"HeartGold & SoulSilver","releaseDate":"2010/02/10","printedTotal":123,"total":124,"logo":"https://assets.tcgdex.net/en/hgss/hgss1/logo"},{"id":"hgssp","name":"HGSS Black Star Promos","series":"HeartGold & SoulSilver","releaseDate":"2010/02/11","printedTotal":25,"total":25,"logo":"https://assets.tcgdex.net/en/hgss/hgssp/logo"},{"id":"tk-hs-r","name":"HS trainer Kit (Raichu)","series":"Trainer kits","releaseDate":"2010/05/01","printedTotal":30,"total":30,"logo":""},{"id":"tk-hs-g","name":"HS trainer Kit (Gyarados)","series":"Trainer kits","releaseDate":"2010/05/01","printedTotal":30,"total":30,"logo":""},{"id":"hgss2","name":"Unleashed","series":"HeartGold & SoulSilver","releaseDate":"2010/05/12","printedTotal":95,"total":96,"logo":"https://assets.tcgdex.net/en/hgss/hgss2/logo"},{"id":"hgss3","name":"Undaunted","series":"HeartGold & SoulSilver","releaseDate":"2010/08/18","printedTotal":90,"total":91,"logo":"https://assets.tcgdex.net/en/hgss/hgss3/logo"},{"id":"hgss4","name":"Triumphant","series":"HeartGold & SoulSilver","releaseDate":"2010/11/03","printedTotal":102,"total":103,"logo":"https://assets.tcgdex.net/en/hgss/hgss4/logo"},{"id":"col1","name":"Call of Legends","series":"Call of Legends","releaseDate":"2011/02/09","printedTotal":95,"total":106,"logo":"https://assets.tcgdex.net/en/col/col1/logo"},{"id":"bw1","name":"Black & White","series":"Black & White","releaseDate":"2011/04/25","printedTotal":114,"total":115,"logo":"https://assets.tcgdex.net/en/bw/bw1/logo"},{"id":"bwp","name":"BW Black Star Promos","series":"Black & White","releaseDate":"2011/04/26","printedTotal":101,"total":101,"logo":"https://assets.tcgdex.net/en/bw/bwp/logo"},{"id":"2011bw","name":"McDonald's Collection 2011","series":"McDonald's Collection","releaseDate":"2011/06/17","printedTotal":12,"total":12,"logo":""},{"id":"bw2","name":"Emerging Powers","series":"Black & White","releaseDate":"2011/08/31","printedTotal":98,"total":98,"logo":"https://assets.tcgdex.net/en/bw/bw2/logo"},{"id":"tk-bw-z","name":"BW trainer Kit (Zoroark)","series":"Trainer kits","releaseDate":"2011/09/01","printedTotal":30,"total":30,"logo":""},{"id":"tk-bw-e","name":"BW trainer Kit (Excadrill)","series":"Trainer kits","releaseDate":"2011/09/01","printedTotal":30,"total":30,"logo":""},{"id":"bw3","name":"Noble Victories","series":"Black & White","releaseDate":"2011/11/16","printedTotal":101,"total":102,"logo":"https://assets.tcgdex.net/en/bw/bw3/logo"},{"id":"bw4","name":"Next Destinies","series":"Black & White","releaseDate":"2012/02/08","printedTotal":99,"total":103,"logo":"https://assets.tcgdex.net/en/bw/bw4/logo"},{"id":"bw5","name":"Dark Explorers","series":"Black & White","releaseDate":"2012/05/09","printedTotal":108,"total":111,"logo":"https://assets.tcgdex.net/en/bw/bw5/logo"},{"id":"2012bw","name":"McDonald's Collection 2012","series":"McDonald's Collection","releaseDate":"2012/06/15","printedTotal":12,"total":12,"logo":""},{"id":"bw6","name":"Dragons Exalted","series":"Black & White","releaseDate":"2012/08/15","printedTotal":124,"total":128,"logo":"https://assets.tcgdex.net/en/bw/bw6/logo"},{"id":"dv1","name":"Dragon Vault","series":"Black & White","releaseDate":"2012/10/05","printedTotal":20,"total":21,"logo":"https://assets.tcgdex.net/en/bw/dv1/logo"},{"id":"bw7","name":"Boundaries Crossed","series":"Black & White","releaseDate":"2012/11/07","printedTotal":149,"total":153,"logo":"https://assets.tcgdex.net/en/bw/bw7/logo"},{"id":"bw8","name":"Plasma Storm","series":"Black & White","releaseDate":"2013/02/06","printedTotal":135,"total":138,"logo":"https://assets.tcgdex.net/en/bw/bw8/logo"},{"id":"bw9","name":"Plasma Freeze","series":"Black & White","releaseDate":"2013/05/08","printedTotal":116,"total":122,"logo":"https://assets.tcgdex.net/en/bw/bw9/logo"},{"id":"bw10","name":"Plasma Blast","series":"Black & White","releaseDate":"2013/08/14","printedTotal":101,"total":105,"logo":"https://assets.tcgdex.net/en/bw/bw10/logo"},{"id":"xyp","name":"XY Black Star Promos","series":"XY","releaseDate":"2013/10/12","printedTotal":211,"total":216,"logo":"https://assets.tcgdex.net/en/xy/xyp/logo"},{"id":"rc","name":"Radiant Collection","series":"Black & White","releaseDate":"2013/11/06","printedTotal":25,"total":25,"logo":""},{"id":"bw11","name":"Legendary Treasures","series":"Black & White","releaseDate":"2013/11/06","printedTotal":113,"total":140,"logo":"https://assets.tcgdex.net/en/bw/bw11/logo"},{"id":"xy0","name":"Kalos Starter Set","series":"XY","releaseDate":"2013/11/08","printedTotal":39,"total":39,"logo":"https://assets.tcgdex.net/en/xy/xy0/logo"},{"id":"xya","name":"Yellow A Alternate","series":"XY","releaseDate":"2014/02/05","printedTotal":6,"total":6,"logo":""},{"id":"xy1","name":"XY","series":"XY","releaseDate":"2014/02/05","printedTotal":146,"total":146,"logo":"https://assets.tcgdex.net/en/xy/xy1/logo"},{"id":"tk-xy-sy","name":"XY trainer Kit (Sylveon)","series":"Trainer kits","releaseDate":"2014/03/12","printedTotal":30,"total":30,"logo":""},{"id":"tk-xy-n","name":"XY trainer Kit (Noivern)","series":"Trainer kits","releaseDate":"2014/03/12","printedTotal":30,"total":30,"logo":""},{"id":"xy2","name":"Flashfire","series":"XY","releaseDate":"2014/05/07","printedTotal":106,"total":110,"logo":"https://assets.tcgdex.net/en/xy/xy2/logo"},{"id":"2014xy","name":"McDonald's Collection 2014","series":"McDonald's Collection","releaseDate":"2014/05/23","printedTotal":12,"total":12,"logo":""},{"id":"xy3","name":"Furious Fists","series":"XY","releaseDate":"2014/08/13","printedTotal":111,"total":114,"logo":"https://assets.tcgdex.net/en/xy/xy3/logo"},{"id":"tk-xy-b","name":"XY trainer Kit (Bisharp)","series":"Trainer kits","releaseDate":"2014/11/01","printedTotal":30,"total":30,"logo":""},{"id":"tk-xy-w","name":"XY trainer Kit (Wigglytuff)","series":"Trainer kits","releaseDate":"2014/11/01","printedTotal":30,"total":30,"logo":""},{"id":"xy4","name":"Phantom Forces","series":"XY","releaseDate":"2014/11/05","printedTotal":119,"total":124,"logo":"https://assets.tcgdex.net/en/xy/xy4/logo"},{"id":"xy5","name":"Primal Clash","series":"XY","releaseDate":"2015/02/04","printedTotal":160,"total":164,"logo":"https://assets.tcgdex.net/en/xy/xy5/logo"},{"id":"dc1","name":"Double Crisis","series":"XY","releaseDate":"2015/03/25","printedTotal":34,"total":34,"logo":"https://assets.tcgdex.net/en/xy/dc1/logo"},{"id":"tk-xy-latia","name":"XY trainer Kit (Latias)","series":"Trainer kits","releaseDate":"2015/04/29","printedTotal":30,"total":30,"logo":""},{"id":"tk-xy-latio","name":"XY trainer Kit (Latios)","series":"Trainer kits","releaseDate":"2015/04/29","printedTotal":30,"total":30,"logo":""},{"id":"xy6","name":"Roaring Skies","series":"XY","releaseDate":"2015/05/06","printedTotal":108,"total":112,"logo":"https://assets.tcgdex.net/en/xy/xy6/logo"},{"id":"xy7","name":"Ancient Origins","series":"XY","releaseDate":"2015/08/12","printedTotal":98,"total":101,"logo":"https://assets.tcgdex.net/en/xy/xy7/logo"},{"id":"xy8","name":"BREAKthrough","series":"XY","releaseDate":"2015/11/04","printedTotal":162,"total":165,"logo":"https://assets.tcgdex.net/en/xy/xy8/logo"},{"id":"2015xy","name":"McDonald's Collection 2015","series":"McDonald's Collection","releaseDate":"2015/11/27","printedTotal":12,"total":12,"logo":""},{"id":"xy9","name":"BREAKpoint","series":"XY","releaseDate":"2016/02/03","printedTotal":122,"total":126,"logo":"https://assets.tcgdex.net/en/xy/xy9/logo"},{"id":"g1","name":"Generations","series":"XY","releaseDate":"2016/02/22","printedTotal":83,"total":117,"logo":"https://assets.tcgdex.net/en/xy/g1/logo"},{"id":"tk-xy-su","name":"XY trainer Kit (Suicune)","series":"Trainer kits","releaseDate":"2016/04/27","printedTotal":30,"total":30,"logo":""},{"id":"tk-xy-p","name":"XY trainer Kit (Pikachu Libre)","series":"Trainer kits","releaseDate":"2016/04/27","printedTotal":30,"total":30,"logo":""},{"id":"xy10","name":"Fates Collide","series":"XY","releaseDate":"2016/05/02","printedTotal":124,"total":129,"logo":"https://assets.tcgdex.net/en/xy/xy10/logo"},{"id":"xy11","name":"Steam Siege","series":"XY","releaseDate":"2016/08/03","printedTotal":114,"total":116,"logo":"https://assets.tcgdex.net/en/xy/xy11/logo"},{"id":"2016xy","name":"McDonald's Collection 2016","series":"McDonald's Collection","releaseDate":"2016/08/20","printedTotal":12,"total":12,"logo":""},{"id":"xy12","name":"Evolutions","series":"XY","releaseDate":"2016/11/02","printedTotal":108,"total":113,"logo":"https://assets.tcgdex.net/en/xy/xy12/logo"},{"id":"smp","name":"SM Black Star Promos","series":"Sun & Moon","releaseDate":"2017/02/03","printedTotal":248,"total":248,"logo":"https://assets.tcgdex.net/en/sm/smp/logo"},{"id":"sm1","name":"Sun & Moon","series":"Sun & Moon","releaseDate":"2017/02/03","printedTotal":149,"total":172,"logo":"https://assets.tcgdex.net/en/sm/sm1/logo"},{"id":"tk-sm-r","name":"SM trainer Kit (Alolan Raichu)","series":"Trainer kits","releaseDate":"2017/04/21","printedTotal":30,"total":30,"logo":""},{"id":"tk-sm-l","name":"SM trainer Kit (Lycanroc)","series":"Trainer kits","releaseDate":"2017/04/21","printedTotal":30,"total":30,"logo":""},{"id":"sm2","name":"Guardians Rising","series":"Sun & Moon","releaseDate":"2017/05/05","printedTotal":145,"total":169,"logo":"https://assets.tcgdex.net/en/sm/sm2/logo"},{"id":"2017sm","name":"McDonald's Collection 2017","series":"McDonald's Collection","releaseDate":"2017/08/03","printedTotal":12,"total":12,"logo":""},{"id":"sm3","name":"Burning Shadows","series":"Sun & Moon","releaseDate":"2017/08/04","printedTotal":147,"total":169,"logo":"https://assets.tcgdex.net/en/sm/sm3/logo"},{"id":"sm3.5","name":"Shining Legends","series":"Sun & Moon","releaseDate":"2017/10/06","printedTotal":73,"total":78,"logo":""},{"id":"sm4","name":"Crimson Invasion","series":"Sun & Moon","releaseDate":"2017/11/03","printedTotal":111,"total":125,"logo":"https://assets.tcgdex.net/en/sm/sm4/logo"},{"id":"sm5","name":"Ultra Prism","series":"Sun & Moon","releaseDate":"2018/02/02","printedTotal":156,"total":173,"logo":"https://assets.tcgdex.net/en/sm/sm5/logo"},{"id":"sm6","name":"Forbidden Light","series":"Sun & Moon","releaseDate":"2018/05/04","printedTotal":131,"total":146,"logo":"https://assets.tcgdex.net/en/sm/sm6/logo"},{"id":"sm7","name":"Celestial Storm","series":"Sun & Moon","releaseDate":"2018/08/03","printedTotal":168,"total":183,"logo":"https://assets.tcgdex.net/en/sm/sm7/logo"},{"id":"sm7.5","name":"Dragon Majesty","series":"Sun & Moon","releaseDate":"2018/09/07","printedTotal":70,"total":78,"logo":""},{"id":"2018sm","name":"McDonald's Collection 2018","series":"McDonald's Collection","releaseDate":"2018/10/19","printedTotal":12,"total":12,"logo":""},{"id":"sm8","name":"Lost Thunder","series":"Sun & Moon","releaseDate":"2018/11/02","printedTotal":214,"total":236,"logo":"https://assets.tcgdex.net/en/sm/sm8/logo"},{"id":"sm9","name":"Team Up","series":"Sun & Moon","releaseDate":"2019/01/31","printedTotal":181,"total":196,"logo":"https://assets.tcgdex.net/en/sm/sm9/logo"},{"id":"det1","name":"Detective Pikachu","series":"Sun & Moon","releaseDate":"2019/03/29","printedTotal":18,"total":18,"logo":"https://assets.tcgdex.net/en/sm/det1/logo"},{"id":"sm10","name":"Unbroken Bonds","series":"Sun & Moon","releaseDate":"2019/05/03","printedTotal":214,"total":234,"logo":"https://assets.tcgdex.net/en/sm/sm10/logo"},{"id":"sm11","name":"Unified Minds","series":"Sun & Moon","releaseDate":"2019/08/02","printedTotal":236,"total":258,"logo":"https://assets.tcgdex.net/en/sm/sm11/logo"},{"id":"sma","name":"Hidden Fates Shiny Vault","series":"Sun & Moon","releaseDate":"2019/08/23","printedTotal":94,"total":94,"logo":""},{"id":"sm115","name":"Hidden Fates","series":"Sun & Moon","releaseDate":"2019/08/23","printedTotal":68,"total":69,"logo":"https://assets.tcgdex.net/en/sm/sm115/logo"},{"id":"2019sm","name":"McDonald's Collection 2019","series":"McDonald's Collection","releaseDate":"2019/10/15","printedTotal":12,"total":12,"logo":""},{"id":"sm12","name":"Cosmic Eclipse","series":"Sun & Moon","releaseDate":"2019/11/01","printedTotal":236,"total":271,"logo":"https://assets.tcgdex.net/en/sm/sm12/logo"},{"id":"swshp","name":"SWSH Black Star Promos","series":"Sword & Shield","releaseDate":"2019/11/15","printedTotal":307,"total":307,"logo":"https://assets.tcgdex.net/en/swsh/swshp/logo"},{"id":"swsh1","name":"Sword & Shield","series":"Sword & Shield","releaseDate":"2020/02/07","printedTotal":202,"total":216,"logo":"https://assets.tcgdex.net/en/swsh/swsh1/logo"},{"id":"swsh2","name":"Rebel Clash","series":"Sword & Shield","releaseDate":"2020/05/01","printedTotal":192,"total":209,"logo":"https://assets.tcgdex.net/en/swsh/swsh2/logo"},{"id":"swsh3","name":"Darkness Ablaze","series":"Sword & Shield","releaseDate":"2020/08/14","printedTotal":189,"total":201,"logo":"https://assets.tcgdex.net/en/swsh/swsh3/logo"},{"id":"fut2020","name":"Pokémon Futsal 2020","series":"Sword & Shield","releaseDate":"2020/09/11","printedTotal":5,"total":5,"logo":"https://assets.tcgdex.net/en/swsh/fut2020/logo"},{"id":"swsh3.5","name":"Champion's Path","series":"Sword & Shield","releaseDate":"2020/09/25","printedTotal":73,"total":80,"logo":"https://assets.tcgdex.net/en/swsh/swsh3.5/logo"},{"id":"swsh4","name":"Vivid Voltage","series":"Sword & Shield","releaseDate":"2020/11/13","printedTotal":185,"total":203,"logo":"https://assets.tcgdex.net/en/swsh/swsh4/logo"},{"id":"2021swsh","name":"McDonald's Collection 2021","series":"McDonald's Collection","releaseDate":"2021/02/09","printedTotal":25,"total":25,"logo":""},{"id":"swsh4.5sv","name":"Shining Fates Shiny Vault","series":"Sword & Shield","releaseDate":"2021/02/19","printedTotal":122,"total":122,"logo":""},{"id":"swsh4.5","name":"Shining Fates","series":"Sword & Shield","releaseDate":"2021/02/19","printedTotal":72,"total":73,"logo":"https://assets.tcgdex.net/en/swsh/swsh4.5/logo"},{"id":"swsh5","name":"Battle Styles","series":"Sword & Shield","releaseDate":"2021/03/19","printedTotal":163,"total":183,"logo":"https://assets.tcgdex.net/en/swsh/swsh5/logo"},{"id":"swsh6","name":"Chilling Reign","series":"Sword & Shield","releaseDate":"2021/06/18","printedTotal":198,"total":233,"logo":"https://assets.tcgdex.net/en/swsh/swsh6/logo"},{"id":"swsh7","name":"Evolving Skies","series":"Sword & Shield","releaseDate":"2021/08/27","printedTotal":203,"total":237,"logo":"https://assets.tcgdex.net/en/swsh/swsh7/logo"},{"id":"cel25cc","name":"Celebrations Classic Collection","series":"Sword & Shield","releaseDate":"2021/10/08","printedTotal":25,"total":25,"logo":""},{"id":"cel25","name":"Celebrations","series":"Sword & Shield","releaseDate":"2021/10/08","printedTotal":25,"total":25,"logo":"https://assets.tcgdex.net/en/swsh/cel25/logo"},{"id":"swsh8","name":"Fusion Strike","series":"Sword & Shield","releaseDate":"2021/11/12","printedTotal":264,"total":284,"logo":"https://assets.tcgdex.net/en/swsh/swsh8/logo"},{"id":"swsh9","name":"Brilliant Stars","series":"Sword & Shield","releaseDate":"2022/02/25","printedTotal":172,"total":186,"logo":"https://assets.tcgdex.net/en/swsh/swsh9/logo"},{"id":"swsh9.5tg","name":"Brilliant Stars Trainer Gallery","series":"Sword & Shield","releaseDate":"2022/02/25","printedTotal":30,"total":30,"logo":""},{"id":"swsh10.5tg","name":"Astral Radiance Trainer Gallery","series":"Sword & Shield","releaseDate":"2022/05/27","printedTotal":30,"total":30,"logo":""},{"id":"swsh10","name":"Astral Radiance","series":"Sword & Shield","releaseDate":"2022/05/27","printedTotal":189,"total":216,"logo":"https://assets.tcgdex.net/en/swsh/swsh10/logo"},{"id":"swsh10.5","name":"Pokémon GO","series":"Sword & Shield","releaseDate":"2022/07/01","printedTotal":78,"total":88,"logo":"https://assets.tcgdex.net/en/swsh/swsh10.5/logo"},{"id":"2022swsh","name":"McDonald's Collection 2022","series":"McDonald's Collection","releaseDate":"2022/08/03","printedTotal":15,"total":15,"logo":""},{"id":"swsh11","name":"Lost Origin","series":"Sword & Shield","releaseDate":"2022/09/09","printedTotal":196,"total":217,"logo":"https://assets.tcgdex.net/en/swsh/swsh11/logo"},{"id":"swsh11.5tg","name":"Lost Origin Trainer Gallery","series":"Sword & Shield","releaseDate":"2022/09/09","printedTotal":30,"total":30,"logo":""},{"id":"swsh12.5tg","name":"Silver Tempest Trainer Gallery","series":"Sword & Shield","releaseDate":"2022/11/11","printedTotal":30,"total":30,"logo":""},{"id":"swsh12","name":"Silver Tempest","series":"Sword & Shield","releaseDate":"2022/11/11","printedTotal":195,"total":215,"logo":"https://assets.tcgdex.net/en/swsh/swsh12/logo"},{"id":"swsh12.5","name":"Crown Zenith","series":"Sword & Shield","releaseDate":"2023/01/20","printedTotal":159,"total":160,"logo":"https://assets.tcgdex.net/en/swsh/swsh12.5/logo"},{"id":"swsh12.5gg","name":"Crown Zenith Galarian Gallery","series":"Sword & Shield","releaseDate":"2023/01/20","printedTotal":70,"total":70,"logo":""},{"id":"svp","name":"SVP Black Star Promos","series":"Scarlet & Violet","releaseDate":"2023/03/31","printedTotal":225,"total":226,"logo":""},{"id":"sve","name":"Scarlet & Violet Energy","series":"Scarlet & Violet","releaseDate":"2023/03/31","printedTotal":24,"total":24,"logo":""},{"id":"sv01","name":"Scarlet & Violet","series":"Scarlet & Violet","releaseDate":"2023/03/31","printedTotal":198,"total":258,"logo":"https://assets.tcgdex.net/en/sv/sv01/logo"},{"id":"sv02","name":"Paldea Evolved","series":"Scarlet & Violet","releaseDate":"2023/06/09","printedTotal":193,"total":279,"logo":"https://assets.tcgdex.net/en/sv/sv02/logo"},{"id":"2023sv","name":"McDonald's Collection 2023","series":"McDonald's Collection","releaseDate":"2023/08/01","printedTotal":15,"total":15,"logo":""},{"id":"sv03","name":"Obsidian Flames","series":"Scarlet & Violet","releaseDate":"2023/08/11","printedTotal":197,"total":230,"logo":"https://assets.tcgdex.net/en/sv/sv03/logo"},{"id":"sv03.5","name":"151","series":"Scarlet & Violet","releaseDate":"2023/09/22","printedTotal":165,"total":207,"logo":"https://assets.tcgdex.net/en/sv/sv03.5/logo"},{"id":"mfb","name":"My First Battle","series":"Scarlet & Violet","releaseDate":"2023/09/29","printedTotal":48,"total":48,"logo":""},{"id":"sv04","name":"Paradox Rift","series":"Scarlet & Violet","releaseDate":"2023/11/03","printedTotal":182,"total":266,"logo":"https://assets.tcgdex.net/en/sv/sv04/logo"},{"id":"sv04.5","name":"Paldean Fates","series":"Scarlet & Violet","releaseDate":"2024/01/26","printedTotal":91,"total":245,"logo":"https://assets.tcgdex.net/en/sv/sv04.5/logo"},{"id":"sv05","name":"Temporal Forces","series":"Scarlet & Violet","releaseDate":"2024/03/22","printedTotal":162,"total":218,"logo":""},{"id":"sv06","name":"Twilight Masquerade","series":"Scarlet & Violet","releaseDate":"2024/05/24","printedTotal":167,"total":226,"logo":"https://assets.tcgdex.net/en/sv/sv06/logo"},{"id":"sv06.5","name":"Shrouded Fable","series":"Scarlet & Violet","releaseDate":"2024/08/02","printedTotal":64,"total":99,"logo":"https://assets.tcgdex.net/en/sv/sv06.5/logo"},{"id":"sv07","name":"Stellar Crown","series":"Scarlet & Violet","releaseDate":"2024/09/13","printedTotal":142,"total":175,"logo":"https://assets.tcgdex.net/en/sv/sv07/logo"},{"id":"P-A","name":"Promos-A","series":"Pokémon TCG Pocket","releaseDate":"2024/10/30","printedTotal":0,"total":100,"logo":"https://assets.tcgdex.net/en/tcgp/P-A/logo"},{"id":"A1","name":"Genetic Apex","series":"Pokémon TCG Pocket","releaseDate":"2024/10/30","printedTotal":226,"total":286,"logo":"https://assets.tcgdex.net/en/tcgp/A1/logo"},{"id":"sv08","name":"Surging Sparks","series":"Scarlet & Violet","releaseDate":"2024/11/08","printedTotal":191,"total":252,"logo":"https://assets.tcgdex.net/en/sv/sv08/logo"},{"id":"2024sv","name":"McDonald's Collection 2024","series":"McDonald's Collection","releaseDate":"2024/12/04","printedTotal":15,"total":15,"logo":""},{"id":"A1a","name":"Mythical Island","series":"Pokémon TCG Pocket","releaseDate":"2024/12/17","printedTotal":68,"total":86,"logo":"https://assets.tcgdex.net/en/tcgp/A1a/logo"},{"id":"sv08.5","name":"Prismatic Evolutions","series":"Scarlet & Violet","releaseDate":"2025/01/17","printedTotal":131,"total":180,"logo":"https://assets.tcgdex.net/en/sv/sv08.5/logo"},{"id":"A2","name":"Space-Time Smackdown","series":"Pokémon TCG Pocket","releaseDate":"2025/01/30","printedTotal":140,"total":207,"logo":"https://assets.tcgdex.net/en/tcgp/A2/logo"},{"id":"A2a","name":"Triumphant Light","series":"Pokémon TCG Pocket","releaseDate":"2025/02/28","printedTotal":75,"total":96,"logo":"https://assets.tcgdex.net/en/tcgp/A2a/logo"},{"id":"A2b","name":"Shining Revelry","series":"Pokémon TCG Pocket","releaseDate":"2025/03/27","printedTotal":72,"total":111,"logo":"https://assets.tcgdex.net/en/tcgp/A2b/logo"},{"id":"sv09","name":"Journey Together","series":"Scarlet & Violet","releaseDate":"2025/03/28","printedTotal":159,"total":190,"logo":"https://assets.tcgdex.net/en/sv/sv09/logo"},{"id":"A3","name":"Celestial Guardians","series":"Pokémon TCG Pocket","releaseDate":"2025/04/30","printedTotal":155,"total":239,"logo":"https://assets.tcgdex.net/en/tcgp/A3/logo"},{"id":"A3a","name":"Extradimensional Crisis","series":"Pokémon TCG Pocket","releaseDate":"2025/05/29","printedTotal":69,"total":103,"logo":""},{"id":"sv10","name":"Destined Rivals","series":"Scarlet & Violet","releaseDate":"2025/05/30","printedTotal":182,"total":244,"logo":"https://assets.tcgdex.net/en/sv/sv10/logo"},{"id":"A3b","name":"Eevee Grove","series":"Pokémon TCG Pocket","releaseDate":"2025/06/26","printedTotal":69,"total":107,"logo":""},{"id":"sv10.5w","name":"White Flare","series":"Scarlet & Violet","releaseDate":"2025/07/17","printedTotal":86,"total":173,"logo":"https://assets.tcgdex.net/en/sv/sv10.5w/logo"},{"id":"sv10.5b","name":"Black Bolt","series":"Scarlet & Violet","releaseDate":"2025/07/17","printedTotal":86,"total":172,"logo":"https://assets.tcgdex.net/en/sv/sv10.5b/logo"},{"id":"A4","name":"Wisdom of Sea and Sky","series":"Pokémon TCG Pocket","releaseDate":"2025/07/30","printedTotal":161,"total":241,"logo":"https://assets.tcgdex.net/en/tcgp/A4/logo"},{"id":"A4a","name":"Secluded Springs","series":"Pokémon TCG Pocket","releaseDate":"2025/08/28","printedTotal":71,"total":105,"logo":"https://assets.tcgdex.net/en/tcgp/A4a/logo"},{"id":"mee","name":"Mega Evolution Energy","series":"Mega Evolution","releaseDate":"2025/09/25","printedTotal":8,"total":8,"logo":""},{"id":"me01","name":"Mega Evolution","series":"Mega Evolution","releaseDate":"2025/09/26","printedTotal":132,"total":188,"logo":"https://assets.tcgdex.net/en/me/me01/logo"},{"id":"mep","name":"MEP Black Star Promos","series":"Mega Evolution","releaseDate":"2025/09/26","printedTotal":0,"total":60,"logo":""},{"id":"B1","name":"Mega Rising","series":"Pokémon TCG Pocket","releaseDate":"2025/10/30","printedTotal":226,"total":331,"logo":"https://assets.tcgdex.net/en/tcgp/B1/logo"},{"id":"me02","name":"Phantasmal Flames","series":"Mega Evolution","releaseDate":"2025/11/14","printedTotal":94,"total":130,"logo":"https://assets.tcgdex.net/en/me/me02/logo"},{"id":"B1a","name":"Crimson Blaze","series":"Pokémon TCG Pocket","releaseDate":"2025/12/17","printedTotal":69,"total":103,"logo":""},{"id":"B2","name":"Fantastical Parade","series":"Pokémon TCG Pocket","releaseDate":"2026/01/29","printedTotal":155,"total":234,"logo":"https://assets.tcgdex.net/en/tcgp/B2/logo"},{"id":"me02.5","name":"Ascended Heroes","series":"Mega Evolution","releaseDate":"2026/01/30","printedTotal":217,"total":295,"logo":"https://assets.tcgdex.net/en/me/me02.5/logo"},{"id":"B2a","name":"Paldean Wonders","series":"Pokémon TCG Pocket","releaseDate":"2026/02/26","printedTotal":93,"total":131,"logo":""},{"id":"me03","name":"Perfect Order","series":"Mega Evolution","releaseDate":"2026/03/27","printedTotal":88,"total":124,"logo":"https://assets.tcgdex.net/en/me/me03/logo"},{"id":"me04","name":"Chaos Rising","series":"Mega Evolution","releaseDate":"2026/05/22","printedTotal":86,"total":122,"logo":"https://assets.tcgdex.net/en/me/me04/logo"},{"id":"me05","name":"Pitch Black","series":"Mega Evolution","releaseDate":"2026/07/17","printedTotal":84,"total":120,"logo":"https://assets.tcgdex.net/en/me/me05/logo"}].map(s => ({
+  id:s.id, name:s.name, series:s.series, releaseDate:s.releaseDate,
+  printedTotal:s.printedTotal, total:s.total,
+  images:{ logo: s.logo ? s.logo + ".webp" : "" }
+}));
+const SETBY = new Map(SETS.map(s => [s.id, s]));
+const getSets = async () => SETS;
+const setMetaFor = id => SETBY.get(id) || null;
+function openSets(){
   showPane("pkSets"); lastMonView="pkSets";
-  const el=document.getElementById("setList");
-  el.innerHTML=`<div class="msg"><div class="spin"></div>Loading every set…</div>`;
-  try{ await getSets(); drawSets(""); }
-  catch(e){ el.innerHTML=`<div class="msg"><b>Couldn't load the set list</b>Try again in a moment.</div>`; }
+  drawSets(document.getElementById("setFilter").value.toLowerCase().trim());
 }
 function drawSets(q){
   const list=SETS.filter(s=>!q||s.name.toLowerCase().includes(q)||(s.series||"").toLowerCase().includes(q)||(s.releaseDate||"").includes(q));
@@ -1276,7 +1684,7 @@ function drawSets(q){
       </button>`).join("")}</div>`).join("")
     : `<div class="empty"><b>No sets match that</b></div>`;
 }
-document.getElementById("setFilter").oninput = e => { if(SETS) drawSets(e.target.value.toLowerCase().trim()); };
+document.getElementById("setFilter").oninput = e => drawSets(e.target.value.toLowerCase().trim());
 document.getElementById("setList").onclick = e => { const b=e.target.closest("[data-set]"); if(b) openSet(b.dataset.set); };
 
 let setRows=[], setVFilter=new Set(), setLimit=60, setMeta=null;
@@ -1288,17 +1696,17 @@ async function openSet(id){
   document.getElementById("setFilters").innerHTML="";
   document.getElementById("setOut").innerHTML=`<div class="msg"><div class="spin"></div>Pulling every card in ${esc(setMeta.name)}…</div>`;
   try{
-    let raw=[],page=1;
-    while(page<=3){
-      const d=await jget(`https://api.pokemontcg.io/v2/cards?q=${encodeURIComponent("set.id:"+id)}&pageSize=250&page=${page}&orderBy=number`);
-      raw=raw.concat(d.data||[]); if(!d.data||d.data.length<250) break; page++;
-    }
-    setRows=[]; raw.forEach(c=>setRows.push(...cardRows(c)));
+    const s=await jget(`https://api.tcgdex.net/v2/en/sets/${encodeURIComponent(id)}`);
+    const list=(s&&s.cards)||[];
+    setRows=await expand(list,"en",(partial,more)=>{
+      setRows=[...partial].sort((a,b)=>(parseInt(a.num)||0)-(parseInt(b.num)||0)||a.v.localeCompare(b.v));
+      drawSet(more);
+    });
     setRows.sort((a,b)=>(parseInt(a.num)||0)-(parseInt(b.num)||0)||a.v.localeCompare(b.v));
-    setVFilter.clear(); setLimit=60; drawSet();
-  }catch(e){ document.getElementById("setOut").innerHTML=`<div class="msg"><b>Couldn't load that set</b>Try again in a moment.</div>`; }
+    setVFilter.clear(); drawSet();
+  }catch(e){ document.getElementById("setOut").innerHTML=`<div class="msg">${netMsg()}</div>`; }
 }
-function drawSet(){
+function drawSet(partial){
   const all=setRows, shown=setVFilter.size?all.filter(r=>setVFilter.has(r.v)):all;
   const total=all.reduce((s,r)=>s+(r.mk||0),0);
   document.getElementById("setStats").innerHTML=[[all.length,"Printings"],[new Set(all.map(r=>r.id)).size,"Cards"],
@@ -1309,7 +1717,7 @@ function drawSet(){
   document.getElementById("setFilters").innerHTML=
     `<button class="chip" data-sv="" aria-pressed="${!setVFilter.size}">All printings</button>`+
     Object.keys(vc).map(v=>`<button class="chip" data-sv="${esc(v)}" aria-pressed="${setVFilter.has(v)}">${esc(v)} · ${vc[v]}</button>`).join("")+
-    `<span class="note"><b>${shown.length}</b> tiles</span>`;
+    `<span class="note"><b>${shown.length}</b> tiles${partial?" · loading":""}</span>`;
   document.getElementById("setOut").innerHTML=`<div class="grid">${shown.slice(0,setLimit).map((r,i)=>tileHTML(r,i,{})).join("")}</div>`+
     (shown.length>setLimit?`<button class="more" id="setMore">Show ${Math.min(60,shown.length-setLimit)} more of ${shown.length}</button>`:"");
   const m=document.getElementById("setMore"); if(m) m.onclick=()=>{ setLimit+=60; drawSet(); };
@@ -1367,39 +1775,30 @@ function select(p){
     .filter(([i])=>p[i]).map(([i,l])=>`<span>${l} <b>${esc(p[i])}</b></span>`).join("");
   showTab("browse"); showPane("pkCards"); load();
 }
-async function fetchEnglish(p){
-  const token=p[1].toLowerCase().replace(/[^a-z0-9]+/g,"*"), bad=conflicts(p[1]), target=norm(p[1]);
-  let raw=[],page=1,total=Infinity;
-  while(page<=4 && raw.length<total){
-    const d=await jget(`https://api.pokemontcg.io/v2/cards?q=${encodeURIComponent("name:*"+token+"*")}&pageSize=250&page=${page}`);
-    if(typeof d.totalCount==="number") total=d.totalCount;
-    raw=raw.concat(d.data||[]); if(!d.data||d.data.length<250) break; page++; }
-  const out=[];
-  for(const c of raw){ const n=norm(c.name);
-    if(!n.includes(target)||bad.some(b=>n.includes(b))) continue; out.push(...cardRows(c)); }
-  if(p[0]===25) out.unshift(ILLUSTRATOR);
-  return out;
-}
-async function fetchOther(p){
+/* One Pokemon, one language. tcgdex answers in well under a second. */
+async function fetchCards(p){
   const L=LANGS.find(l=>l[0]===lang);
-  const list=await jget(`https://api.tcgdex.net/v2/${lang}/cards?name=eq:${encodeURIComponent(p[L[2]]||p[1])}`);
-  if(!list.length) return (p[0]===25&&lang==="ja")?[ILLUSTRATOR]:[];
-  const out=[];
-  for(let i=0;i<list.length;i+=6){
-    const batch=await Promise.all(list.slice(i,i+6).map(c=>jget(`https://api.tcgdex.net/v2/${lang}/cards/${encodeURIComponent(c.id)}`,3).catch(()=>null)));
-    batch.forEach((c,j)=>{ const base=list[i+j],img=(c&&c.image)||base.image,vr=(c&&c.variants)||{};
-      const marks=[]; if(vr.firstEdition)marks.push("1st Edition"); if(vr.holo)marks.push("Holo");
-      if(vr.reverse)marks.push("Reverse Holo"); if(vr.normal)marks.push("Non-Holo"); if(!marks.length)marks.push("Standard Print");
-      marks.forEach(v=>out.push({ n:(c&&c.name)||base.name, s:(c&&c.set&&c.set.name)||UNK, sid:"",
-        y:(c&&c.set&&c.set.releaseDate)?c.set.releaseDate.slice(0,4):UNK, d:(c&&c.set&&c.set.releaseDate)||"",
-        num:(c&&c.localId)||base.localId||"", tot:(c&&c.set&&c.set.cardCount&&c.set.cardCount.official)||"",
-        a:(c&&c.illustrator)||UNK, r:(c&&c.rarity)||UNK, v, mk:null,
-        img:img?img+"/low.webp":"", big:img?img+"/high.webp":"", id:base.id })); });
-    if(p[0]===25&&lang==="ja"&&!out.some(r=>r.trophy)) out.unshift(ILLUSTRATOR);
-    render(out,true);
-  }
-  return out;
+  const nm = lang==="en" ? p[1] : (p[L[2]]||p[1]);
+  const list=await jget(`https://api.tcgdex.net/v2/${lang}/cards?name=${encodeURIComponent(nm)}`);
+  if(!list||!list.length) return (p[0]===25&&(lang==="en"||lang==="ja"))?[ILLUSTRATOR]:[];
+  /* the API contains-matches, so drop anything belonging to a different Pokemon */
+  const target=norm(p[1]), bad=conflicts(p[1]);
+  const nmTarget = lang==="en" ? target : norm(nm);
+  const keep=list.filter(c=>{
+    const n=norm(c.name);
+    if(lang!=="en") return n.includes(nmTarget);
+    return n.includes(target) && !bad.some(b=>n.includes(b));
+  });
+  if(!keep.length) return [];
+  const rows=await expand(keep, lang, (partial,more)=>{
+    const sorted=[...partial].sort((a,b)=>(a.d||"9").localeCompare(b.d||"9")||a.n.localeCompare(b.n));
+    if(p[0]===25) sorted.unshift(ILLUSTRATOR);
+    rows_live=sorted; render(sorted,more);
+  });
+  if(p[0]===25) rows.unshift(ILLUSTRATOR);
+  return rows;
 }
+let rows_live=[];
 async function load(){
   if(!cur) return;
   const key=cur[0]+"|"+lang;
@@ -1407,12 +1806,11 @@ async function load(){
   document.getElementById("filters").innerHTML=""; document.getElementById("stats").innerHTML="";
   if(cache.has(key)){ rows=cache.get(key); return render(rows); }
   try{
-    rows = lang==="en" ? await fetchEnglish(cur) : await fetchOther(cur);
+    rows = await fetchCards(cur);
     rows.sort((a,b)=>(a.d||"9").localeCompare(b.d||"9")||a.n.localeCompare(b.n));
     cache.set(key,rows); render(rows);
   }catch(e){ document.getElementById("out").innerHTML=
-      `<div class="msg"><b>The card database didn't answer</b>It does that under load. Everything you've already
-       viewed is cached, so this is usually a one-off.<br><br><button id="retryLoad">Try again</button></div>`;
+      `<div class="msg">${netMsg()}<br><br><button id="retryLoad">Try again</button></div>`;
     const rb=document.getElementById("retryLoad"); if(rb) rb.onclick=()=>{ cache.delete(key); load(); }; }
 }
 function render(all,partial){
@@ -1506,9 +1904,8 @@ function openFinder(dest){
       res.innerHTML=`<div class="msg" style="padding:34px"><div class="spin"></div>Searching…</div>`;
       let found=[];
       if("pokémon illustrator pikachu corocoro".includes(q.toLowerCase())) found.push(ILLUSTRATOR);
-      try{ const term="name:*"+q.replace(/[^a-zA-Z0-9 ]/g,"")+"*";
-        const d=await jget(`https://api.pokemontcg.io/v2/cards?q=${encodeURIComponent(term)}&pageSize=60&orderBy=-set.releaseDate`);
-        (d.data||[]).forEach(c=>found.push(...cardRows(c))); }catch(e){}
+      try{ const list=await jget(`https://api.tcgdex.net/v2/en/cards?name=${encodeURIComponent(q)}`);
+        found.push(...await expand((list||[]).slice(0,40),"en")); }catch(e){}
       if(!found.length) return res.innerHTML=`<div class="msg" style="padding:34px"><b>No cards found</b>Try a shorter search.</div>`;
       res.innerHTML=`<div class="grid">${found.slice(0,48).map((r,i)=>tileHTML(r,i,{})).join("")}</div>`;
     },320); };
@@ -1671,9 +2068,9 @@ document.getElementById("newGoal").onclick=async()=>{
     </div>
     <datalist id="dexNames">${DEX.map(p=>`<option value="${esc(p[1])}">`).join("")}</datalist>`,
     `<button class="prime" id="gGo">Build it</button>`);
-  getSets().then(ss=>{ const el=document.getElementById("gSet"); if(!el) return;
-    el.innerHTML=`<option value="">Any set</option>`+[...ss].sort((a,b)=>(b.releaseDate||"").localeCompare(a.releaseDate||""))
-      .map(s=>`<option value="${s.id}">${esc(s.name)} · ${(s.releaseDate||"").slice(0,4)}</option>`).join(""); }).catch(()=>{});
+  { const el=document.getElementById("gSet");
+    if(el) el.innerHTML=`<option value="">Any set</option>`+[...SETS].sort((a,b)=>(b.releaseDate||"").localeCompare(a.releaseDate||""))
+      .map(s=>`<option value="${s.id}">${esc(s.name)} · ${(s.releaseDate||"").slice(0,4)}</option>`).join(""); }
   document.getElementById("gGo").onclick=buildGoal;
 };
 async function buildGoal(){
@@ -1682,27 +2079,37 @@ async function buildGoal(){
     set:document.getElementById("gSet").value, art:document.getElementById("gArt").value.trim(),
     vari:document.getElementById("gVar").value, reg:document.getElementById("gReg").value };
   const name=document.getElementById("gName").value.trim()||[f.mon,f.sub,f.rar,f.set&&"set",f.art].filter(Boolean).join(" ")||"Untitled collection";
-  const parts=[];
-  if(f.mon) parts.push(`name:*${f.mon.replace(/[^a-zA-Z0-9]+/g,"*")}*`);
-  if(f.txt) parts.push(`name:*${f.txt.replace(/[^a-zA-Z0-9]+/g,"*")}*`);
-  if(f.sub) parts.push(`subtypes:"${f.sub}"`);
-  if(f.rar) parts.push(`rarity:"${f.rar}"`);
-  if(f.set) parts.push(`set.id:${f.set}`);
-  if(f.art) parts.push(`artist:"${f.art}"`);
-  if(!parts.length&&!f.reg){ document.getElementById("gGo").textContent="Pick at least one filter"; return; }
+  if(!f.mon&&!f.txt&&!f.set&&!f.art&&!f.sub&&!f.rar&&!f.reg){
+    document.getElementById("gGo").textContent="Pick at least one filter"; return; }
   document.getElementById("gGo").textContent="Building…";
   try{
-    let raw=[],page=1;
-    const q=parts.length?parts.join(" "):`name:*${DEX.find(p=>String(p[3])===f.reg)[1]}*`;
-    while(page<=6){ const d=await jget(`https://api.pokemontcg.io/v2/cards?q=${encodeURIComponent(q)}&pageSize=250&page=${page}`);
-      raw=raw.concat(d.data||[]); if(!d.data||d.data.length<250) break; page++; }
-    const regNames=f.reg?DEX.filter(p=>String(p[3])===f.reg).map(p=>norm(p[1])):null;
-    let targets=[];
-    for(const c of raw){
-      if(regNames&&!regNames.some(n=>norm(c.name).includes(n))) continue;
-      let rs=cardRows(c); if(f.vari) rs=rs.filter(r=>r.v===f.vari);
-      targets.push(...rs.map(r=>({ id:r.id,n:r.n,s:r.s,y:r.y,v:r.v,a:r.a,mk:r.mk,img:r.img,big:r.big,num:r.num,tot:r.tot,r:r.r,d:r.d })));
+    let stubs=[];
+    if(f.set){
+      const s=await jget(`https://api.tcgdex.net/v2/en/sets/${encodeURIComponent(f.set)}`);
+      stubs=(s&&s.cards)||[];
+    } else {
+      const seed=f.mon||f.txt;
+      if(seed) stubs=await jget(`https://api.tcgdex.net/v2/en/cards?name=${encodeURIComponent(seed)}`)||[];
+      else {
+        const regNames=DEX.filter(p=>String(p[3])===f.reg).map(p=>p[1]);
+        for(const nmR of regNames.slice(0,40)){
+          const l=await jget(`https://api.tcgdex.net/v2/en/cards?name=${encodeURIComponent(nmR)}`).catch(()=>null);
+          if(l) stubs.push(...l);
+        }
+      }
     }
+    if(f.mon){ const t=norm(f.mon); stubs=stubs.filter(c=>norm(c.name).includes(t)); }
+    if(f.txt){ const t=norm(f.txt); stubs=stubs.filter(c=>norm(c.name).includes(t)); }
+    if(f.reg){ const rn=DEX.filter(p=>String(p[3])===f.reg).map(p=>norm(p[1]));
+      stubs=stubs.filter(c=>rn.some(n=>norm(c.name).includes(n))); }
+    stubs=stubs.slice(0,400);
+    let all=await expand(stubs,"en");
+    if(f.rar) all=all.filter(r=>(r.r||"").toLowerCase().includes(f.rar.toLowerCase()));
+    if(f.art) all=all.filter(r=>(r.a||"").toLowerCase().includes(f.art.toLowerCase()));
+    if(f.sub){ const t=f.sub.toLowerCase(); all=all.filter(r=>(r.n||"").toLowerCase().includes(t)); }
+    if(f.vari) all=all.filter(r=>r.v===f.vari);
+    const targets=all.map(r=>({id:r.id,n:r.n,s:r.s,y:r.y,v:r.v,a:r.a,mk:r.mk,img:r.img,big:r.big,
+      num:r.num,tot:r.tot,r:r.r,d:r.d}));
     if(!targets.length){ document.getElementById("gGo").textContent="No cards matched — loosen a filter"; return; }
     goals.push({ id:uid(), name, f, targets, built:new Date().toISOString() });
     saveGoals(); closeModal(); toast(`"${name}" built · ${targets.length} cards`); showTab("collection"); drawGoals();
@@ -1959,8 +2366,8 @@ $("attachBtn").onclick=async()=>{
   trio.addEventListener("click",async e=>{
     const c=e.target.closest("[data-hero]"); if(!c) return;
     try{
-      const d=await jget(`https://api.pokemontcg.io/v2/cards/${c.dataset.hero}`);
-      const rs=cardRows(d.data); if(!rs.length) return;
+      const d=await jget(`https://api.tcgdex.net/v2/en/cards/${c.dataset.hero}`);
+      const rs=cardRows(d); if(!rs.length) return;
       lbList=rs; lbIdx=0; drawLB();
     }catch(err){}
   });
@@ -1996,6 +2403,37 @@ document.getElementById("moreInfo").onclick=()=>{ modal("How this works",`
     through one storage layer, so a real backend can slot in later. API responses are cached for 12 hours so repeat
     views load instantly.</p>`, `<button class="prime" id="okInfo">Got it</button>`); };
 document.addEventListener("click",e=>{ if(e.target&&e.target.id==="okInfo") closeModal(); });
+
+/* ---------- connection self-test ----------
+   One cheap call on load so a blocked frame or a dead API is named up front
+   instead of showing up as a page that just never fills in. */
+function setPill(kind, text){
+  const p=document.getElementById("netPill");
+  p.className="netpill"+(kind?" "+kind:""); p.innerHTML=`<i></i>${esc(text)}`;
+  p.classList.remove("hide");
+  if(!kind) setTimeout(()=>p.classList.add("hide"), 2500);
+}
+(async () => {
+  setPill("", "Connecting…");
+  try {
+    await rawFetch("https://api.tcgdex.net/v2/en/series", 9000);
+    setPill("", "Connected");
+  } catch (e) {
+    if (e && e.name === "TypeError") {
+      netBlocked = true;
+      setPill("bad", "Offline");
+      const host=document.getElementById("tab-dash");
+      const bar=document.createElement("div");
+      bar.className="netbar";
+      bar.innerHTML=`<b>This page can't reach the card API.</b> That isn't your connection and it isn't a bug in
+        the app — the window it's running in is blocking outbound requests. Save this file and open it directly
+        from your computer, or host it, and everything will load. Your collection and scans are unaffected.`;
+      host.insertBefore(bar, host.firstChild);
+    } else {
+      setPill("warn", "API slow");
+    }
+  }
+})();
 
 /* ---------- boot ---------- */
 drawDashStats(); drawGoals(); loadTrending();
